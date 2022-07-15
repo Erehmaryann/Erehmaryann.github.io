@@ -16,7 +16,7 @@ function WhyUs() {
           distribution.
         </p>
       </div>
-      <div className="flex flex-wrap justify-between items-center md:w-[50%] md:pb-[40px]">
+      <div className="flex flex-wrap justify-between items-center md:w-[55%] md:pb-[40px]">
         <div className="flex items-center">
           <img
             src={update}
@@ -48,7 +48,7 @@ function WhyUs() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between items-center md:w-[50%]">
+      <div className="flex flex-wrap justify-between items-center md:w-[55%]">
         <div className="flex items-center">
           <img
             src={award}
