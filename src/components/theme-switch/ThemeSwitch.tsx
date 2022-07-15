@@ -6,18 +6,12 @@ const ThemeSwitch: FC = () => {
     const { currentTheme, changeCurrentTheme } = useContext(ThemeContext)
 
     return (
-        <button
-        // data-testid='switch-theme-btn'
-        style={{
-            padding: 5,
-            borderRadius: 5,
-            color: currentTheme === 'light' ? 'white' : 'black',
-            background: currentTheme === 'light' ? 'black' : 'white',
-        }}
-        onClick={() => changeCurrentTheme(currentTheme === 'light' ? 'dark' : 'light')}
+        <div className="mb-[-10px]"
+            onClick={() => changeCurrentTheme(currentTheme === 'light' ? 'dark' : 'light')}
         >
-         Go {currentTheme === 'light' ? 'DARK' : 'LIGHT'} MODE
-        </button>
+            <img src="/light-switch.png" className="block dark:hidden w-[30px]" alt="App Light Switch" />
+            <img src="/dark-switch.png" className="hidden dark:block w-[30px]" alt="App Dark Switch" />
+        </div>
     )
 }
 
