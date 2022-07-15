@@ -1,10 +1,10 @@
-import { createContext } from "react"
+import { createContext } from "react";
 
 const defaultValue = {
-  currentTheme: "light",
+  currentTheme: "dark",
   changeCurrentTheme: (newTheme: "light" | "dark") => {},
-}
+};
 
-const ThemeContext = createContext(defaultValue)
+const ThemeContext = createContext(defaultValue);
 
-export default ThemeContext
+export default ThemeContext;
