@@ -1,117 +1,89 @@
 import React, { lazy } from "react";
-import { NavLink, Link } from "react-router-dom";
+
+const Span = () => (
+  <span
+    className="absolute w-[7px] h-[7px] bottom-[-12px] left-[50%] rounded-[50%] bg-[#f6d021] dark:bg-black"
+    aria-hidden="true"
+  ></span>
+);
 
 const ThemeSwitch = lazy(() => import("../theme-switch/ThemeSwitch"));
 const Button = lazy(() => import("../common/button/button"));
 
 function MainNav() {
+  const [isActive, setIsActive] = React.useState("");
+
   return (
     <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">
       <header className="flex justify-between items-center my-[-20px]">
         <div className="">
-          <Link to="#hero">
+          <a href="/">
             <img
               className="hidden dark:block mr-[70px]"
               src="/logo-dark.png"
               width={200}
               alt="Jam-forte Home"
             />
-          </Link>
-          <Link to="#hero">
+          </a>
+          <a href="/">
             <img
               className="block dark:hidden mr-[70px]"
               src="/logo-light.png"
               width={200}
               alt="Jam-forte Home"
             />
-          </Link>
+          </a>
         </div>
         <nav className="flex justify-center items-center">
           <div className="relative">
-            <NavLink
-              to="#"
-              className={({ isActive }) =>
-                [
-                  "text-[#999999] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]",
-                  isActive
-                    ? "active:text-[#F6D021] dark:active:text-[#000]"
-                    : undefined,
-                ]
-                  .filter(Boolean)
-                  .join(" ")
-              }
+            <a
+              href="#company"
+              onClick={() => setIsActive("Company")}
+              className={`${
+                isActive === "Company" && "text-[#F6D021] dark:text-[#000]"
+              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
             >
               Company
-            </NavLink>
-            <span
-              className="active:absolute w-[7px] h-[7px] bottom-[-12px] left-[50%] rounded-[50%] bg-[#f6d021]"
-              aria-hidden="true"
-            ></span>
+            </a>
+            {isActive === "Company" && <Span />}
           </div>
           <div className="relative">
-            <NavLink
-              to="#"
-              className={({ isActive }) =>
-                [
-                  "text-[#999999] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]",
-                  isActive
-                    ? "active:text-[#F6D021] dark:active:text-[#000]"
-                    : undefined,
-                ]
-                  .filter(Boolean)
-                  .join(" ")
-              }
+            <a
+              href="/"
+              onClick={() => setIsActive("About")}
+              className={`${
+                isActive === "About" && "text-[#F6D021] dark:text-[#000]"
+              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
             >
               About
-            </NavLink>
-            <span
-              className="active:absolute w-[7px] h-[7px] bottom-[-12px] left-[50%] rounded-[50%] bg-[#f6d021] dark:bg-black"
-              aria-hidden="true"
-            ></span>
+            </a>
+            {isActive === "About" && <Span />}
           </div>
           <div className="relative">
-            <NavLink
-              to="#"
-              className={({ isActive }) =>
-                [
-                  "text-[#999999] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]",
-                  isActive
-                    ? "active:text-[#F6D021] dark:active:text-[#000]"
-                    : undefined,
-                ]
-                  .filter(Boolean)
-                  .join(" ")
-              }
+            <a
+              href="/"
+              onClick={() => setIsActive("Services")}
+              className={`${
+                isActive === "Services" && "text-[#F6D021] dark:text-[#000]"
+              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
             >
               Services
-            </NavLink>
-            <span
-              className="active:absolute w-[7px] h-[7px] bottom-[-12px] left-[50%] rounded-[50%] bg-[#f6d021] dark:bg-black"
-              aria-hidden="true"
-            ></span>
+            </a>
+            {isActive === "Services" && <Span />}
           </div>
           <div className="relative">
-            <NavLink
-              to="#"
-              className={({ isActive }) =>
-                [
-                  "text-[#999999] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]",
-                  isActive
-                    ? "active:text-[#F6D021] dark:active:text-[#000]"
-                    : undefined,
-                ]
-                  .filter(Boolean)
-                  .join(" ")
-              }
+            <a
+              href="/"
+              onClick={() => setIsActive("Team")}
+              className={`${
+                isActive === "Team" && "text-[#F6D021] dark:text-[#000]"
+              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
             >
               Team
-            </NavLink>
-            <span
-              className="active:absolute w-[7px] h-[7px] bottom-[-12px] left-[50%] rounded-[50%] bg-[#f6d021] dark:bg-black"
-              aria-hidden="true"
-            ></span>
+            </a>
+            {isActive === "Team" && <Span />}
           </div>
-          <Link to="">
+          <a href="/">
             <Button
               type="button"
               className="dark:bg-[#fff] 
@@ -121,7 +93,7 @@ function MainNav() {
             >
               Contact us
             </Button>
-          </Link>
+          </a>
         </nav>
         <div className="flex items-center justify-center">
           <ThemeSwitch />
