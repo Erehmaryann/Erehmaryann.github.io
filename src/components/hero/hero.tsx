@@ -28,15 +28,15 @@ function Hero() {
           alt="hero bg-img"
         />
       </div>
-      <div className="z-10 absolute flex h-full justify-end flex-col pb-[35px] items-start w-[55%]">
-        <h1 className="text-[#fff] w-[45%] text-[2.6rem] font-bold leading-10 pl-1">
+      <div className="z-10 absolute flex h-full justify-end flex-col pb-[35px] items-start md:w-[55%] sm:p-4 md:p-0">
+        <h1 className="text-[#fff] md:w-[45%] text-[2.6rem] font-bold leading-10 pl-1">
           {sliderData[slide].leadText}
         </h1>
-        <p className="text-[#F6D021] w-[90%] pt-[21px] pb-[33px] text-[1rem] pl-1 my-3 bg-[rgba(0,0,0,0.5)]">
+        <p className="text-[#F6D021] md:w-[90%] pt-[21px] pb-[33px] text-[1rem] pl-1 my-3 bg-[rgba(0,0,0,0.5)]">
           {sliderData[slide].paragraph}
         </p>
         <p className="border-b-[3px] border-[#fff] w-[15%]"></p>
-        <div className="flex justify-center items-center w-[100%] mt-[140px]">
+        <div className="flex justify-center items-center w-[100%] mt-[140px] mb-10">
           <span
             className={`${
               slide === 0 && "bg-[#F6D021]"

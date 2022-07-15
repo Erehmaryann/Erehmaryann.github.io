@@ -49,7 +49,7 @@ function MainNav() {
           </div>
           <div className="relative">
             <a
-              href="/"
+              href="#about"
               onClick={() => setIsActive("About")}
               className={`${
                 isActive === "About" && "text-[#F6D021] dark:text-[#000]"
@@ -90,6 +90,7 @@ function MainNav() {
               dark:text-[#000] bg-black text-white p-[13px] 
               rounded-[10px] mr-[45px] text-sm shadow-[0px_5px_20px_#BDDFFF] dark:hover:text-[#fff] dark:hover:bg-[#000] 
               hover:text-[#f6d021]"
+              aria-label="contact-us-button"
             >
               Contact us
             </Button>
