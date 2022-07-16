@@ -3,12 +3,13 @@ import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import instagram from "../../assets/instagram.png";
 import linkedin from "../../assets/linkedin.png";
+import toTop from "../../assets/to-top-icon.png";
 
 const Button = React.lazy(() => import("../common/button/button"));
 
 function ContactUs() {
   return (
-    <section className="bg-[#333535] w-full flex justify-center items-center sm:p-4 md:py-[100px]">
+    <section className="relative bg-[#333535] w-full flex justify-center items-center sm:px-4 sm:py-8 md:py-[100px]">
       <div className="md:w-[65%] flex justify-between sm:flex-wrap md:flex-nowrap items-center">
         <div className="flex flex-col items-start justify-center md:w-[40%]">
           <p className="text-[0.7rem] font-[500] text-[#D3D3D3] pb-4">
@@ -108,6 +109,11 @@ function ContactUs() {
             </form>
           </div>
         </div>
+      </div>
+      <div className="absolute right-8 bottom-10">
+        <a href="#hero">
+          <img src={toTop} alt="to top button" width={31} />
+        </a>
       </div>
     </section>
   );

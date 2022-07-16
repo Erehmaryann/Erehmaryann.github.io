@@ -25,7 +25,7 @@ function Review() {
   };
 
   return (
-    <section className="flex flex-col items-center w-full">
+    <section className="flex flex-col items-center w-full sm:pb-8 md:pb-0">
       <div className="md:pt-0 pb-[35px] md:text-center md:w-[500px]">
         <h3 className="font-[700] text-[#333535] pb-[8px] text-[1.8rem] dark:text-white">
           What our customer says
