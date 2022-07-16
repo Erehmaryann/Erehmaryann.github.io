@@ -15,7 +15,7 @@ function Services() {
           <div className="md:w-[50%] sm:w-[100%] items-start sm:mt-[16px] md:h-auto sm:h-[70%]">
             <img
               src={services}
-              alt="people"
+              alt="services"
               className="w-full md:h-auto sm:h-full md:mx-[-32px] md:mt-[-32px]"
             />
           </div>
