@@ -40,8 +40,10 @@ function MainNav() {
               href="#company"
               onClick={() => setIsActive("Company")}
               className={`${
-                isActive === "Company" && "text-[#F6D021] dark:text-[#000]"
-              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
+                isActive === "Company"
+                  ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
+                  : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              }`}
             >
               Company
             </a>
@@ -52,8 +54,10 @@ function MainNav() {
               href="#about"
               onClick={() => setIsActive("About")}
               className={`${
-                isActive === "About" && "text-[#F6D021] dark:text-[#000]"
-              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
+                isActive === "About"
+                  ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
+                  : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              }`}
             >
               About
             </a>
@@ -64,8 +68,10 @@ function MainNav() {
               href="#services"
               onClick={() => setIsActive("Services")}
               className={`${
-                isActive === "Services" && "text-[#F6D021] dark:text-[#000]"
-              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
+                isActive === "Services"
+                  ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
+                  : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              }`}
             >
               Services
             </a>
@@ -73,11 +79,13 @@ function MainNav() {
           </div>
           <div className="relative">
             <a
-              href="/"
+              href="/team"
               onClick={() => setIsActive("Team")}
               className={`${
-                isActive === "Team" && "text-[#F6D021] dark:text-[#000]"
-              } text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]`}
+                isActive === "Team"
+                  ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
+                  : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              }`}
             >
               Team
             </a>
