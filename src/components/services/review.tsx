@@ -36,6 +36,7 @@ function Review() {
       </div>
       <div className="flex flex-nowrap h-[300px] justify-center items-center md:w-[100%] pt-[21px]">
         <button
+          type="button"
           disabled={slider === 0}
           className="cursor-pointer"
           onClick={decreaseSlide}
@@ -80,9 +81,13 @@ function Review() {
             />
           </div>
         </div>
-        <div className="cursor-pointer" onClick={increaseSlide}>
+        <button
+          type="button"
+          className="cursor-pointer"
+          onClick={increaseSlide}
+        >
           <RightArrow />
-        </div>
+        </button>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 
 const GetTouch = React.lazy(() => import("./get-in-touch"));
+const ContactUs = React.lazy(() => import("./contact-us"));
 
 function Footer() {
   return (
@@ -10,6 +11,7 @@ function Footer() {
     >
       <div className="w-full">
         <GetTouch />
+        <ContactUs />
       </div>
     </section>
   );
