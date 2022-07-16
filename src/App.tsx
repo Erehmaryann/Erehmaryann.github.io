@@ -5,6 +5,7 @@ import {
   Routes,
   // Route
 } from "react-router-dom";
+import Footer from "./components/footer/footer";
 
 const MainNav = lazy(() => import("./components/nav-bar/main-nav"));
 const Hero = lazy(() => import("./components/hero/hero"));
@@ -21,9 +22,11 @@ const App: FC = () => {
       <Company />
       <About />
       <Services />
+
       <BrowserRouter>
         <Routes></Routes>
       </BrowserRouter>
+      <Footer />
     </ThemeContextWrapper>
   );
 };
