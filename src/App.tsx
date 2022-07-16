@@ -10,6 +10,7 @@ const MainNav = lazy(() => import("./components/nav-bar/main-nav"));
 const Hero = lazy(() => import("./components/hero/hero"));
 const Company = lazy(() => import("./components/company/company"));
 const About = lazy(() => import("./components/about/about"));
+const Services = lazy(() => import("./components/services/services"));
 const ThemeContextWrapper = lazy(() => import("./context/ThemeContextWrapper"));
 
 const App: FC = () => {
@@ -20,6 +21,7 @@ const App: FC = () => {
         <Hero />
         <Company />
         <About />
+        <Services />
         <Routes></Routes>
       </BrowserRouter>
     </ThemeContextWrapper>

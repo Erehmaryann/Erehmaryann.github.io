@@ -11,7 +11,7 @@ function Company() {
       id="company"
       className="min-h-[100vh] w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
     >
-      <div className="pt-[76px] h-full w-full flex justify-center flex-col items-center sm:p-4 md:px-0 md:pb-0">
+      <div className="h-full w-full flex justify-center flex-col items-center sm:p-4 md:px-0 md:pb-0">
         <div className="sm:pt-8 md:text-center">
           <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px]">
             Customer trust is our goal
@@ -50,7 +50,7 @@ function Company() {
           </div>
         </div>
         <div className="md:w-[55%] flex justify-between items-center sm:pb-14 md:pb-[100px] h-auto md:flex-row sm:flex-col sm:pt-[35px]">
-          <div className="relative flex justify-center flex-col h-[40%] md:w-[45%] sm:w-[100%] sm:pb-8">
+          <div className="flex justify-center items-start flex-col h-[40%] md:w-[45%] sm:w-[100%] sm:pb-8 md:mt-10">
             <h3 className="text-[1.8rem] font-[700] text-[#333535] dark:text-[#fff]">
               Company Mission
             </h3>
@@ -64,7 +64,7 @@ function Company() {
               <Button
                 type="button"
                 className="bg-[#D4AF37] drop-shadow-md   
-                rounded-[10px] py-[14px] px-[30px] mt-[50px] text-white text-[0.8rem]"
+                rounded-[10px] py-[14px] px-[30px] mt-[20px] text-white text-[0.8rem]"
               >
                 Learn About
               </Button>
@@ -74,7 +74,7 @@ function Company() {
             <img
               src={ladies}
               alt="ladies"
-              className="w-full md:h-auto sm:h-full sm:my-[-10px]"
+              className="w-full md:h-auto sm:h-full sm:my-[-10px] md:my-0"
             />
           </div>
         </div>

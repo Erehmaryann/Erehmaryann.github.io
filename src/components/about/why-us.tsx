@@ -7,7 +7,7 @@ import hours from "../../assets/hours.png";
 function WhyUs() {
   return (
     <section className="flex flex-col items-center w-full sm:p-4 md:py-[100px]">
-      <div className="pt-[21px] pb-[35px] md:text-center md:w-[300px]">
+      <div className="sm:pt-[21px] md:pt-0 pb-[35px] md:text-center md:w-[300px]">
         <h3 className="font-[700] text-[#333535] pb-[8px] text-[1.8rem]">
           Why choosing us?
         </h3>
@@ -17,7 +17,7 @@ function WhyUs() {
         </p>
       </div>
       <div className="flex flex-wrap justify-between items-center md:w-[55%] md:pb-[40px]">
-        <div className="flex items-center">
+        <div className="flex items-center sm:pb-3 md:pb-0">
           <img
             src={update}
             alt="lifetime update"
@@ -32,7 +32,7 @@ function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center sm:pb-3 md:pb-0">
           <img
             src={trust}
             alt="trust worthy icon"
@@ -49,7 +49,7 @@ function WhyUs() {
         </div>
       </div>
       <div className="flex flex-wrap justify-between items-center md:w-[55%]">
-        <div className="flex items-center">
+        <div className="flex items-center sm:pb-3 md:pb-0">
           <img
             src={award}
             alt="award winning icon"
@@ -64,7 +64,7 @@ function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center sm:pb-3 md:pb-0">
           <img
             src={hours}
             alt="support icon"

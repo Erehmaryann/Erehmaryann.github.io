@@ -61,7 +61,7 @@ function MainNav() {
           </div>
           <div className="relative">
             <a
-              href="/"
+              href="#services"
               onClick={() => setIsActive("Services")}
               className={`${
                 isActive === "Services" && "text-[#F6D021] dark:text-[#000]"
