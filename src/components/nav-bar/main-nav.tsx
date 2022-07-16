@@ -83,7 +83,7 @@ function MainNav() {
             </a>
             {isActive === "Team" && <Span />}
           </div>
-          <a href="/">
+          <a href="#contactUs">
             <Button
               type="button"
               className="dark:bg-[#fff] 
