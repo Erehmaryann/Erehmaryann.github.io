@@ -10,7 +10,7 @@ function Services() {
       id="services"
       className="min-h-[100vh] w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
     >
-      <div className="h-full w-full flex justify-center flex-col items-center sm:p-4 md:px-0 md:pb-0 border">
+      <div className="h-full w-full flex justify-center flex-col items-center sm:p-4 md:px-0 md:pb-0">
         <div className="flex justify-center items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[0px] sm:mt-[35px]">
           <div className="md:w-[50%] sm:w-[100%] items-start sm:mt-[16px] md:h-auto sm:h-[70%]">
             <img

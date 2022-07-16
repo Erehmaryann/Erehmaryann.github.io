@@ -1,24 +1,29 @@
-import featureImg from "../../assets/feature.png";
+import featureDark from "../../assets/feature.png";
+import featureLight from "../../assets/feature-light.png";
 
 export const featureData = [
   {
     id: 1,
-    src: featureImg,
+    src: featureDark,
+    src2: featureLight,
     text: "Web-Server",
   },
   {
     id: 2,
-    src: featureImg,
+    src: featureDark,
+    src2: featureLight,
     text: "Web-Server",
   },
   {
     id: 3,
-    src: featureImg,
+    src: featureDark,
+    src2: featureLight,
     text: "Web-Server",
   },
   {
     id: 4,
-    src: featureImg,
+    src: featureDark,
+    src2: featureLight,
     text: "Web-Server",
   },
 ];

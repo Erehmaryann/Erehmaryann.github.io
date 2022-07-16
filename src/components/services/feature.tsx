@@ -18,7 +18,18 @@ function Feature() {
         <div className="flex flex-wrap justify-between">
           {featureData.map((data) => (
             <div key={data.id} className="flex flex-col md:mx-8 pb-10">
-              <img src={data.src} width={30} alt={`${data.text}`} />
+              <img
+                className="dark:hidden"
+                src={data.src}
+                width={30}
+                alt={`${data.text}`}
+              />
+              <img
+                className="hidden dark:block"
+                src={data.src2}
+                width={30}
+                alt={`${data.text}`}
+              />
               <h6 className="dark:text-[#F6D021] text-[#23232B] font-[700] text-[0.7rem] pt-2">
                 {data.text}
               </h6>
@@ -28,7 +39,18 @@ function Feature() {
         <div className="flex flex-wrap justify-between">
           {featureData.map((data) => (
             <div key={data.id} className="flex flex-col md:mx-8 pb-10">
-              <img src={data.src} width={30} alt={`${data.text}`} />
+              <img
+                className="dark:hidden"
+                src={data.src}
+                width={30}
+                alt={`${data.text}`}
+              />
+              <img
+                className="hidden dark:block"
+                src={data.src2}
+                width={30}
+                alt={`${data.text}`}
+              />
               <h6 className="dark:text-[#F6D021] text-[#23232B] font-[700] text-[0.7rem] pt-2">
                 {data.text}
               </h6>
