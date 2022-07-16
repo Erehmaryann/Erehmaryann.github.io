@@ -9,7 +9,7 @@ function Company() {
   return (
     <section
       id="company"
-      className="min-h-[100vh] w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
+      className="w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
     >
       <div className="h-full w-full flex justify-center flex-col items-center sm:p-4 md:px-0 md:pb-0">
         <div className="sm:pt-8 md:text-center">

@@ -15,7 +15,7 @@ function Feature() {
         </p>
       </div>
       <div className="flex flex-col justify-between items-center md:w-[55%] sm:w-full md:py-[40px]">
-        <div className="flex flex-wrap justify-between items-center md:w-auto sm:w-full">
+        <div className="flex flex-wrap justify-between md:w-auto sm:w-full">
           {featureData.map((data) => (
             <div key={data.id} className="flex flex-col md:mx-8 pb-10">
               <img
@@ -36,7 +36,7 @@ function Feature() {
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap justify-between md:w-auto sm:w-full ">
+        <div className="flex flex-wrap justify-between md:w-auto sm:w-full">
           {featureData.map((data) => (
             <div key={data.id} className="flex flex-col md:mx-8 pb-10">
               <img
