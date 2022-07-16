@@ -3,6 +3,7 @@ import services from "../../assets/services.png";
 
 const Button = React.lazy(() => import("../common/button/button"));
 const Feature = React.lazy(() => import("./feature"));
+const Review = React.lazy(() => import("./review"));
 
 function Services() {
   return (
@@ -42,6 +43,7 @@ function Services() {
           </div>
         </div>
         <Feature />
+        <Review />
       </div>
     </section>
   );

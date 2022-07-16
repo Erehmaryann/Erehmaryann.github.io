@@ -16,12 +16,12 @@ const ThemeContextWrapper = lazy(() => import("./context/ThemeContextWrapper"));
 const App: FC = () => {
   return (
     <ThemeContextWrapper>
+      <MainNav />
+      <Hero />
+      <Company />
+      <About />
+      <Services />
       <BrowserRouter>
-        <MainNav />
-        <Hero />
-        <Company />
-        <About />
-        <Services />
         <Routes></Routes>
       </BrowserRouter>
     </ThemeContextWrapper>

@@ -20,7 +20,7 @@ function Company() {
             The point of using Lorem Ipsum is that it has.
           </p>
         </div>
-        <div className="flex h-[60%] justify-between items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[0px] sm:mt-[35px]">
+        <div className="flex h-[60%] justify-between items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[10px] sm:mt-[35px]">
           <div className="md:w-[50%] sm:w-[100%] items-start sm:mt-[16px] md:h-auto sm:h-[70%]">
             <img
               src={people}
