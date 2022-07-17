@@ -45,7 +45,7 @@ function ContactUs() {
               </li>
               <li className="pb-2">
                 <a
-                  href="#company"
+                  href="/#company"
                   className="hover:text-[#D4AF37] text-[#D3D3D3] text-[0.7rem]"
                 >
                   Company
@@ -53,7 +53,7 @@ function ContactUs() {
               </li>
               <li className="pb-2">
                 <a
-                  href="#about"
+                  href="/#about"
                   className="hover:text-[#D4AF37] text-[#D3D3D3] text-[0.7rem]"
                 >
                   About
@@ -61,7 +61,7 @@ function ContactUs() {
               </li>
               <li className="pb-2">
                 <a
-                  href="#services"
+                  href="/#services"
                   className="hover:text-[#D4AF37] text-[#D3D3D3] text-[0.7rem]"
                 >
                   Services
@@ -69,7 +69,7 @@ function ContactUs() {
               </li>
               <li className="pb-2">
                 <a
-                  href="/"
+                  href="/team"
                   className="hover:text-[#D4AF37] text-[#D3D3D3] text-[0.7rem]"
                 >
                   Team
@@ -95,17 +95,19 @@ function ContactUs() {
               Request Call
             </h6>
             <form className="pt-[15px] pb-2">
-              <input
+              {/* <input
                 type="text"
                 placeholder="Enter phone number ..."
                 className="bg-transparent italic text-[0.7rem] py-[10px] px-[30px] border border-[#fff] rounded-[8px]"
-              />
-              <Button
-                type="submit"
-                className="mt-3 block bg-[#D4AF37] py-2 px-3 rounded-[7px] text-[0.7rem] text-white"
-              >
-                Free Consult
-              </Button>
+              /> */}
+              <a href="tel:+234-704-550-9455">
+                <Button
+                  type="submit"
+                  className="mt-3 block bg-[#D4AF37] py-2 px-3 rounded-[7px] text-[0.7rem] text-white"
+                >
+                  Free Consult
+                </Button>
+              </a>
             </form>
           </div>
         </div>

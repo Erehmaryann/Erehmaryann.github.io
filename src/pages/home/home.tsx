@@ -6,11 +6,11 @@ const Services = React.lazy(() => import("../../components/services/services"));
 
 function Home() {
   return (
-    <div>
+    <div id="home">
       <Hero />
       <Company />
       <About />
-      <Services />e
+      <Services />
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React, { Component, ErrorInfo } from "react";
-import {State, Props} from "./types";
+import { State, Props } from "./types";
 
 class ErrorBoundary extends Component<Props, State> {
   public state: State = {
-    hasError: false
+    hasError: false,
   };
 
   public static getDerivedStateFromError(_: Error): State {
@@ -17,7 +17,13 @@ class ErrorBoundary extends Component<Props, State> {
 
   public render() {
     if (this.state.hasError) {
-      return <h1>Sorry.. there was an error</h1>;
+      return (
+        <div className="flex items-center justify-center h-screen">
+          <h1 className="text-[1.5rem] text-red-700">
+            Sorry.. there was an error
+          </h1>
+        </div>
+      );
     }
 
     return this.props.children;

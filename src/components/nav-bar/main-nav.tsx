@@ -12,8 +12,10 @@ const ThemeSwitch = lazy(() => import("../theme-switch/ThemeSwitch"));
 const Button = lazy(() => import("../common/button/button"));
 
 function MainNav() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isActive, setIsActive] = React.useState("");
   const history = useLocation();
+  console.log(history);
 
   return (
     <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">
@@ -40,44 +42,48 @@ function MainNav() {
           <div className="relative">
             <a
               href="/#company"
-              onClick={() => setIsActive("Company")}
+              onClick={() =>
+                history.pathname === "/"
+                  ? setIsActive("Company")
+                  : setIsActive("Company")
+              }
               className={`${
-                isActive === "Company"
+                history.hash === "#company"
                   ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
                   : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
               }`}
             >
               Company
             </a>
-            {isActive === "Company" && <Span />}
+            {history.hash === "#company" && <Span />}
           </div>
           <div className="relative">
             <a
               href="/#about"
               onClick={() => setIsActive("About")}
               className={`${
-                isActive === "About"
+                history.hash === "#about"
                   ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
                   : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
               }`}
             >
               About
             </a>
-            {isActive === "About" && <Span />}
+            {history.hash === "#about" && <Span />}
           </div>
           <div className="relative">
             <a
               href="/#services"
               onClick={() => setIsActive("Services")}
               className={`${
-                isActive === "Services"
+                history.hash === "#services"
                   ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
                   : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
               }`}
             >
               Services
             </a>
-            {isActive === "Services" && <Span />}
+            {history.hash === "#services" && <Span />}
           </div>
           <div className="relative">
             <a
