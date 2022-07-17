@@ -1,5 +1,7 @@
 import React, { lazy } from "react";
-import { useLocation, Link, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+const ThemeSwitch = lazy(() => import("../theme-switch/ThemeSwitch"));
+const Button = lazy(() => import("../common/button/button"));
 
 const Span = () => (
   <span
@@ -7,9 +9,6 @@ const Span = () => (
     aria-hidden="true"
   ></span>
 );
-
-const ThemeSwitch = lazy(() => import("../theme-switch/ThemeSwitch"));
-const Button = lazy(() => import("../common/button/button"));
 
 function MainNav() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
