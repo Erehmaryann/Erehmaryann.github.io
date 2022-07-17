@@ -8,7 +8,7 @@ function Loader() {
   React.useEffect(() => {
     setTimeout(() => {
       setIsVisible(false);
-    }, 5000);
+    }, 10000);
   }, []);
   return (
     <div className="bg-[#fff] h-screen w-screen">{isVisible && <Logo />}</div>

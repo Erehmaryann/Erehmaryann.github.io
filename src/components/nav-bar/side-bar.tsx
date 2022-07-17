@@ -75,7 +75,6 @@ const SideBar = ({ handleNav }: NavProps) => {
       </div>
       <div className="relative pb-4" onClick={handleNav}>
         <p
-          // to="/team"
           onClick={() => {
             setIsActive("Team");
             navigate(`/team`);

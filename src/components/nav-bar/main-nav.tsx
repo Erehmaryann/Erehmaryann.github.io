@@ -86,7 +86,6 @@ function MainNav() {
           </div>
           <div className="relative">
             <p
-              // to="/team"
               onClick={() => {
                 setIsActive("Team");
                 navigate(`/team`);
