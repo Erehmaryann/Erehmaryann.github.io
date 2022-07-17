@@ -1,4 +1,5 @@
 import React, { lazy } from "react";
+import { useLocation } from "react-router-dom";
 
 const Span = () => (
   <span
@@ -12,6 +13,7 @@ const Button = lazy(() => import("../common/button/button"));
 
 function MainNav() {
   const [isActive, setIsActive] = React.useState("");
+  const history = useLocation();
 
   return (
     <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">
@@ -34,10 +36,10 @@ function MainNav() {
             />
           </a>
         </div>
-        <nav className="flex justify-center items-center">
+        <nav className="flex items-center justify-center">
           <div className="relative">
             <a
-              href="#company"
+              href="/#company"
               onClick={() => setIsActive("Company")}
               className={`${
                 isActive === "Company"
@@ -51,7 +53,7 @@ function MainNav() {
           </div>
           <div className="relative">
             <a
-              href="#about"
+              href="/#about"
               onClick={() => setIsActive("About")}
               className={`${
                 isActive === "About"
@@ -65,7 +67,7 @@ function MainNav() {
           </div>
           <div className="relative">
             <a
-              href="#services"
+              href="/#services"
               onClick={() => setIsActive("Services")}
               className={`${
                 isActive === "Services"
@@ -82,14 +84,14 @@ function MainNav() {
               href="/team"
               onClick={() => setIsActive("Team")}
               className={`${
-                isActive === "Team"
+                history.pathname === "/team"
                   ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
-                  : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+                  : "text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
               }`}
             >
               Team
             </a>
-            {isActive === "Team" && <Span />}
+            {history.pathname === "/team" && <Span />}
           </div>
           <a href="#contactUs">
             <Button
