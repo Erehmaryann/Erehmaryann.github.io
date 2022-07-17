@@ -29,6 +29,9 @@ function MobileNav() {
             />
           </a>
         </div>
+        <div className="flex items-center justify-center">
+          <ThemeSwitch />
+        </div>
         <div className="mr-6">
           <div className="block dark:hidden" onClick={handleNav}>
             {showNav ? <CloseLight /> : <OpenLight />}
@@ -36,9 +39,6 @@ function MobileNav() {
           <div className="hidden dark:block" onClick={handleNav}>
             {showNav ? <CloseDark /> : <OpenDark />}
           </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <ThemeSwitch />
         </div>
       </header>
       {showNav && <SideBar handleNav={handleNav} />}
