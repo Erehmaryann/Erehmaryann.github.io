@@ -1,5 +1,5 @@
 import React, { lazy } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Span = () => (
   <span
@@ -85,8 +85,8 @@ function MainNav() {
             {history.hash === "#services" && <Span />}
           </div>
           <div className="relative">
-            <a
-              href="/team"
+            <Link
+              to="/team"
               onClick={() => setIsActive("Team")}
               className={`${
                 history.pathname === "/team"
@@ -95,7 +95,7 @@ function MainNav() {
               }`}
             >
               Team
-            </a>
+            </Link>
             {history.pathname === "/team" && <Span />}
           </div>
           <a href="#contactUs">
