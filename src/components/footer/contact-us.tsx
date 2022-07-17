@@ -95,14 +95,9 @@ function ContactUs() {
               Request Call
             </h6>
             <form className="pt-[15px] pb-2">
-              {/* <input
-                type="text"
-                placeholder="Enter phone number ..."
-                className="bg-transparent italic text-[0.7rem] py-[10px] px-[30px] border border-[#fff] rounded-[8px]"
-              /> */}
               <a href="tel:+234-704-550-9455">
                 <Button
-                  type="submit"
+                  type="button"
                   className="mt-3 block bg-[#D4AF37] py-2 px-3 rounded-[7px] text-[0.7rem] text-white"
                 >
                   Free Consult

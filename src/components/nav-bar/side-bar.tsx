@@ -5,19 +5,23 @@ const Button = React.lazy(() => import("../common/button/button"));
 
 const Span = () => (
   <span
-    className="absolute w-[7px] h-[7px] bottom-[-12px] left-[50%] rounded-[50%] bg-[#f6d021] dark:bg-black"
+    className="absolute w-[7px] h-[7px] right-[50%] top-[25%] rounded-[50%] bg-[#f6d021] dark:bg-black"
     aria-hidden="true"
   ></span>
 );
 
-const SideBar = () => {
-  // eslint-disable-next-line no-unused-vars
+type NavProps = {
+  handleNav: () => void;
+};
+
+const SideBar = ({ handleNav }: NavProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isActive, setIsActive] = React.useState("");
   const history = useLocation();
   let navigate = useNavigate();
   return (
-    <nav className="flex-col items-center justify-center hidden">
-      <div className="relative">
+    <nav className="justify-center p-8 top-[90px] right-[10px] bg-white absolute flex-col items-center border h-[350px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]">
+      <div className="relative pb-4" onClick={handleNav}>
         <a
           href="/#company"
           onClick={() =>
@@ -27,43 +31,43 @@ const SideBar = () => {
           }
           className={`${
             history.hash === "#company"
-              ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
-              : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              ? "text-[#F6D021] dark:text-[#000] text-sm"
+              : " text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
           }`}
         >
           Company
         </a>
         {history.hash === "#company" && <Span />}
       </div>
-      <div className="relative">
+      <div className="relative pb-4" onClick={handleNav}>
         <a
           href="/#about"
           onClick={() => setIsActive("About")}
           className={`${
             history.hash === "#about"
-              ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
-              : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              ? "text-[#F6D021] dark:text-[#000] text-sm"
+              : "text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
           }`}
         >
           About
         </a>
         {history.hash === "#about" && <Span />}
       </div>
-      <div className="relative">
+      <div className="relative pb-4" onClick={handleNav}>
         <a
           href="/#services"
           onClick={() => setIsActive("Services")}
           className={`${
             history.hash === "#services"
-              ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
-              : " text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              ? "text-[#F6D021] dark:text-[#000] text-sm"
+              : " text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
           }`}
         >
           Services
         </a>
         {history.hash === "#services" && <Span />}
       </div>
-      <div className="relative">
+      <div className="relative pb-4" onClick={handleNav}>
         <p
           // to="/team"
           onClick={() => {
@@ -72,8 +76,8 @@ const SideBar = () => {
           }}
           className={`${
             history.pathname === "/team"
-              ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
-              : "text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              ? "text-[#F6D021] dark:text-[#000] text-sm"
+              : "text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
           }`}
         >
           Team
@@ -82,10 +86,11 @@ const SideBar = () => {
       </div>
       <a href="#contactUs">
         <Button
+          onClick={handleNav}
           type="button"
-          className="dark:bg-[#fff] 
+          className="dark:bg-[#fff]
               dark:text-[#000] bg-black text-white p-[13px] 
-              rounded-[10px] mr-[45px] text-sm shadow-[0px_5px_20px_#BDDFFF] dark:hover:text-[#fff] dark:hover:bg-[#000] 
+              rounded-[10px] text-sm shadow-[0px_5px_20px_#BDDFFF] dark:hover:text-[#fff] dark:hover:bg-[#000] 
               hover:text-[#f6d021]"
           aria-label="contact-us-button"
         >

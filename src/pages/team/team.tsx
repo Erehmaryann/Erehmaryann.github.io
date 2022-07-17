@@ -14,7 +14,7 @@ function Team() {
         <div className="absolute left-0 right-0 w-full h-full">
           <img className="object-cover h-full" src={teamBg} alt="hero bg-img" />
         </div>
-        <div className="z-10 absolute flex h-full flex-col items-center text-center md:w-[55%] sm:p-4 md:pt-[60px]">
+        <div className="z-10 absolute flex h-full flex-col items-center text-center md:w-[55%] sm:px-4 pt-[60px]">
           <h2 className="text-[#fff] md:w-[45%] text-[2.6rem] font-bold leading-10 pl-1">
             Our Team
           </h2>

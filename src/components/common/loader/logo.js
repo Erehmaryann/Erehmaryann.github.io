@@ -50,7 +50,7 @@ const pathTwoVariants = {
 const Logo = () => {
   return (
     <AnimatePresence>
-      <motion.div className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-slate-300">
+      <motion.div className="fixed top-0 left-0 flex items-center justify-center w-full h-full">
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           width="250"
