@@ -82,8 +82,8 @@ const SideBar = ({ handleNav }: NavProps) => {
           }}
           className={`${
             history.pathname === "/team"
-              ? "text-[#F6D021] dark:text-[#000] text-sm"
-              : "text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+              ? "text-[#F6D021] dark:text-[#000] text-sm cursor-pointer"
+              : "text-[#999999] font-[500] dark:text-white cursor-pointer relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
           }`}
         >
           Team

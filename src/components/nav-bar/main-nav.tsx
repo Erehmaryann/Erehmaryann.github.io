@@ -93,8 +93,8 @@ function MainNav() {
               }}
               className={`${
                 history.pathname === "/team"
-                  ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
-                  : "text-[#999999] font-[500] dark:text-white px-[20px] relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
+                  ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm cursor-pointer"
+                  : "text-[#999999] font-[500] dark:text-white px-[20px] cursor-pointer relative text-sm dark:hover:text-[#000] hover:text-[#f6d021]"
               }`}
             >
               Team
