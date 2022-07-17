@@ -18,7 +18,7 @@ const App: FC = () => {
           <MobileNav />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/team" element={<Team />} />
+            <Route path="team" element={<Team />} />
           </Routes>
         </BrowserRouter>
         <Footer />

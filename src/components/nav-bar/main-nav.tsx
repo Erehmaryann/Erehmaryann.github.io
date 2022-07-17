@@ -15,7 +15,6 @@ function MainNav() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isActive, setIsActive] = React.useState("");
   const history = useLocation();
-  console.log(history);
 
   return (
     <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">

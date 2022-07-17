@@ -1,18 +1,19 @@
-import React, {lazy, Suspense} from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import ErrorBoundary from "./components/error-boundary";
 import "./index.css";
 
 const App = lazy(() => import("./App"));
+const Loader = lazy(() => import("./components/common/loader/loader"));
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <ErrorBoundary>
-    <Suspense fallback={<div>Loading...</div>}>
-    <App />
+    <Suspense fallback={<Loader />}>
+      <App />
     </Suspense>
   </ErrorBoundary>
 );
