@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Button = React.lazy(() => import("../common/button/button"));
 
@@ -19,8 +20,13 @@ const SideBar = ({ handleNav }: NavProps) => {
   const [isActive, setIsActive] = React.useState("");
   const history = useLocation();
   let navigate = useNavigate();
+
   return (
-    <nav className="justify-center p-8 top-[90px] right-[10px] bg-white absolute flex-col items-center border h-[350px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]">
+    <motion.nav
+      style={{ right: 0 }}
+      animate={{ left: 100 }}
+      className="justify-center p-8 top-[90px] right-[10px] bg-white absolute flex-col items-center border h-[350px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]"
+    >
       <div className="relative pb-4" onClick={handleNav}>
         <a
           href="/#company"
@@ -97,7 +103,7 @@ const SideBar = ({ handleNav }: NavProps) => {
           Contact us
         </Button>
       </a>
-    </nav>
+    </motion.nav>
   );
 };
 
