@@ -1,5 +1,5 @@
 import React, { lazy } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 
 const Span = () => (
   <span
@@ -15,6 +15,7 @@ function MainNav() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isActive, setIsActive] = React.useState("");
   const history = useLocation();
+  let navigate = useNavigate();
 
   return (
     <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">
@@ -85,9 +86,12 @@ function MainNav() {
             {history.hash === "#services" && <Span />}
           </div>
           <div className="relative">
-            <Link
-              to="/team"
-              onClick={() => setIsActive("Team")}
+            <p
+              // to="/team"
+              onClick={() => {
+                setIsActive("Team");
+                navigate(`/team`);
+              }}
               className={`${
                 history.pathname === "/team"
                   ? "text-[#F6D021] dark:text-[#000] px-[20px] text-sm"
@@ -95,7 +99,7 @@ function MainNav() {
               }`}
             >
               Team
-            </Link>
+            </p>
             {history.pathname === "/team" && <Span />}
           </div>
           <a href="#contactUs">
