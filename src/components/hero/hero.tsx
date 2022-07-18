@@ -19,7 +19,7 @@ function Hero() {
   const Span = ({ pin }: any) => (
     <span
       className={`${
-        slide === pin ? "bg-[#F6D021]" : "bg-white"
+        slide === pin ? "bg-[#ff9c00]" : "bg-white"
       } ml-[10px] w-[10px] h-[10px] rounded-[50%]`}
     />
   );
@@ -40,7 +40,7 @@ function Hero() {
         <h1 className="text-[#fff] md:w-[45%] text-[2.6rem] font-bold leading-10 pl-1">
           {sliderData[slide].leadText}
         </h1>
-        <p className="text-[#F6D021] md:w-[90%] pt-[21px] pb-[33px] text-[1rem] pl-1 my-3 bg-[rgba(0,0,0,0.5)]">
+        <p className="text-[#ff9c00] md:w-[90%] pt-[21px] pb-[33px] text-[1rem] pl-1 my-3 bg-[rgba(0,0,0,0.5)]">
           {sliderData[slide].paragraph}
         </p>
         <p className="border-b-[3px] border-[#fff] w-[15%]"></p>

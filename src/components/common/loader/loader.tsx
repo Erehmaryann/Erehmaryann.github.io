@@ -11,7 +11,9 @@ function Loader() {
     }, 10000);
   }, []);
   return (
-    <div className="bg-[#fff] h-screen w-screen">{isVisible && <Logo />}</div>
+    <div className="bg-[#fff] h-screen w-screen opacity-50">
+      {isVisible && <Logo />}
+    </div>
   );
 }
 

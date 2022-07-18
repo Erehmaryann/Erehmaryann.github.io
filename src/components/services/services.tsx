@@ -34,7 +34,7 @@ function Services() {
             <a href="/">
               <Button
                 type="button"
-                className="bg-[#D4AF37] drop-shadow-md   
+                className="bg-[#ff9c00] drop-shadow-md   
                 rounded-[10px] py-[14px] px-[30px] mt-[20px] text-white text-[0.8rem]"
               >
                 View more

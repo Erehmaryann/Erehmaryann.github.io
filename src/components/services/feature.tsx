@@ -30,7 +30,7 @@ function Feature() {
                 width={30}
                 alt={`${data.text}`}
               />
-              <h6 className="dark:text-[#F6D021] text-[#23232B] font-[700] text-[0.7rem] pt-2">
+              <h6 className="dark:text-[#ff9c00] text-[#23232B] font-[700] text-[0.7rem] pt-2">
                 {data.text}
               </h6>
             </div>
@@ -51,7 +51,7 @@ function Feature() {
                 width={30}
                 alt={`${data.text}`}
               />
-              <h6 className="dark:text-[#F6D021] text-[#23232B] font-[700] text-[0.7rem] pt-2">
+              <h6 className="dark:text-[#ff9c00] text-[#23232B] font-[700] text-[0.7rem] pt-2">
                 {data.text}
               </h6>
             </div>

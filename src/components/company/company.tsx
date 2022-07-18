@@ -11,7 +11,7 @@ function Company() {
       id="company"
       className="w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
     >
-      <div className="h-full w-full flex justify-center flex-col items-center sm:p-4 md:px-0 md:pb-0">
+      <div className="flex flex-col items-center justify-center w-full h-full sm:p-4 md:px-0 md:pb-0">
         <div className="sm:pt-8 md:text-center">
           <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px]">
             Customer trust is our goal
@@ -35,11 +35,11 @@ function Company() {
               alt="vision bg"
             />
             <img
-              className="hidden absolute dark:block z-0 h-full"
+              className="absolute z-0 hidden h-full dark:block"
               src={v}
               alt="vision bg"
             />
-            <h4 className="z-10 dark:text-[#F6D021] text-[0.9rem] font-[700] my-[-8px]">
+            <h4 className="z-10 dark:text-[#ff9c00] text-[0.9rem] font-[700] my-[-8px]">
               Company Vision
             </h4>
             <p className="z-10 text-[0.7rem] font-[600] text-[#909090] dark:text-[#fff] italic pt-[8px]">
@@ -63,7 +63,7 @@ function Company() {
             <a href="/">
               <Button
                 type="button"
-                className="bg-[#D4AF37] drop-shadow-md   
+                className="bg-[#ff9c00] drop-shadow-md   
                 rounded-[10px] py-[14px] px-[30px] mt-[20px] text-white text-[0.8rem]"
               >
                 Learn About

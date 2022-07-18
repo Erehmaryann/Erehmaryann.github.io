@@ -64,10 +64,10 @@ function Review() {
             <h5 className="z-10 text-[#333535] text-[0.8rem] font-[600] pt-4 dark:text-white">
               {reviewData[slider].customerName}
             </h5>
-            <h6 className="z-10 text-[#0A72D2] text-[0.8rem] font-[500] dark:text-[#F6D021]">
+            <h6 className="z-10 text-[#0A72D2] text-[0.8rem] font-[500] dark:text-[#ff9c00]">
               {reviewData[slider].jobTitle}
             </h6>
-            <p className="z-10 text-[#919191] dark:text-[#f6d021] italic font-[400] py-3 text-[0.7rem] text-center md:w-[60%] ">
+            <p className="z-10 text-[#919191] dark:text-[#ff9c00] italic font-[400] py-3 text-[0.7rem] text-center md:w-[60%] ">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less.
@@ -75,7 +75,7 @@ function Review() {
             <RatingStar
               numberOfStar={5}
               maxScore={5}
-              colors={{ mask: "#f6d021" }}
+              colors={{ mask: "#ff9c00" }}
               id={reviewData[slider].id}
               rating={reviewData[slider].count}
             />
