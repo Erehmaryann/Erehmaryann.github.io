@@ -24,7 +24,7 @@ function TeamMembers() {
             <img
               src={executiveMember}
               alt="team members"
-              className="md:w-[300px] sm:w-full"
+              className="md:w-[300px] sm:w-[80%] sm:mx-auto md:mx-0"
             />
           </div>
           <p className="text-[0.7rem] md:w-[40%] sm:pt-4 md:pt-0">
@@ -51,7 +51,7 @@ function TeamMembers() {
             <img
               src={executiveMember}
               alt="team members"
-              className="md:w-[300px] sm:w-[100%]"
+              className="md:w-[300px] sm:w-[80%] sm:mx-auto md:mx-0"
             />
           </div>
           <p className="text-[0.7rem] md:w-[40%] sm:pt-4 md:pt-0">
