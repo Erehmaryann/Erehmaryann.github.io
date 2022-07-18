@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Logo = () => {
   return (
     <AnimatePresence>
-      <motion.div className="fixed top-0 left-0 flex items-center justify-center w-full h-full">
+      <motion.div className="bg-[rgba(255,255,255,0.1)] fixed top-0 left-0 flex items-center justify-center w-full h-full">
         <motion.img
           src="/logo-light.png"
           initial={{ rotate: -360 }}

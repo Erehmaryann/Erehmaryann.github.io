@@ -1,9 +1,9 @@
 import React from "react";
-import facebook from "../../assets/facebook.png";
-import twitter from "../../assets/twitter.png";
-import instagram from "../../assets/instagram.png";
-import linkedin from "../../assets/linkedin.png";
-import toTop from "../../assets/to-top-icon.png";
+import facebook from "../../assets/svg/facebook.svg";
+import twitter from "../../assets/svg/twitter.svg";
+import instagram from "../../assets/svg/instagram.svg";
+import linkedin from "../../assets/svg/linkedin.svg";
+import toTop from "../../assets/svg/to-top-icon.svg";
 
 const Button = React.lazy(() => import("../common/button/button"));
 

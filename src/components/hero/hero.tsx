@@ -45,7 +45,7 @@ function Hero() {
         </p>
         <p className="border-b-[3px] border-[#fff] w-[15%]"></p>
         <div className="flex justify-center items-center w-[100%] mt-[140px] mb-10">
-          {sliderData.map((data, index) => (
+          {sliderData.map((data) => (
             <Span key={data.id} pin={data.id} />
           ))}
         </div>
