@@ -1,19 +1,28 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
+import { variants, itemsVariants } from "./nav-variants";
+import { motion } from "framer-motion";
+
+import { Span } from "./span";
 import { CloseDark, CloseLight, OpenLight, OpenDark } from "./icons";
 
-const SideBar = React.lazy(() => import("./side-bar"));
+const Button = React.lazy(() => import("../common/button/button"));
 const ThemeSwitch = React.lazy(() => import("../theme-switch/ThemeSwitch"));
 
 function MobileNav() {
-  const [showNav, setShowNav] = React.useState(false);
+  const [showNav, setShowNav] = React.useState<boolean>(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [isActive, setIsActive] = React.useState<string>("");
+  const history = useLocation();
+  let navigate = useNavigate();
 
   const handleNav = () => {
     setShowNav(!showNav);
   };
 
   return (
-    <div className="md:hidden sm:flex  dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">
+    <div className="md:hidden sm:flex dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">
       <header className="relative flex items-center justify-between w-full">
         <div className="w-[120px]">
           <a href="/">
@@ -35,15 +44,123 @@ function MobileNav() {
           <ThemeSwitch />
         </div>
         <div className="mr-6">
-          <div className="block dark:hidden" onClick={handleNav}>
+          <Button
+            type="button"
+            className="block dark:hidden"
+            onClick={handleNav}
+          >
             {showNav ? <CloseLight /> : <OpenLight />}
-          </div>
-          <div className="hidden dark:block" onClick={handleNav}>
+          </Button>
+          <Button
+            type="button"
+            className="hidden dark:block"
+            onClick={handleNav}
+          >
             {showNav ? <CloseDark /> : <OpenDark />}
-          </div>
+          </Button>
         </div>
       </header>
-      {showNav && <SideBar handleNav={handleNav} />}
+      {showNav && (
+        <div>
+          <motion.nav
+            animate={showNav ? "open" : "closed"}
+            variants={variants}
+            className="justify-center p-8 top-[90px] right-[10px] bg-white absolute flex-col items-center border h-[350px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]"
+          >
+            <motion.div
+              className="relative pb-4"
+              onClick={handleNav}
+              variants={itemsVariants}
+            >
+              <a
+                href="/#company"
+                onClick={() =>
+                  history.pathname === "/"
+                    ? setIsActive("Company")
+                    : setIsActive("Company")
+                }
+                className={`${
+                  history.hash === "#company"
+                    ? "text-[#ff9c00] dark:text-[#000] text-sm"
+                    : " text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#ff9c00]"
+                }`}
+              >
+                Company
+              </a>
+              {history.hash === "#company" && <Span />}
+            </motion.div>
+            <motion.div
+              className="relative pb-4"
+              onClick={handleNav}
+              variants={itemsVariants}
+            >
+              <a
+                href="/#about"
+                onClick={() => setIsActive("About")}
+                className={`${
+                  history.hash === "#about"
+                    ? "text-[#ff9c00] dark:text-[#000] text-sm"
+                    : "text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#ff9c00]"
+                }`}
+              >
+                About
+              </a>
+              {history.hash === "#about" && <Span />}
+            </motion.div>
+            <motion.div
+              className="relative pb-4"
+              onClick={handleNav}
+              variants={itemsVariants}
+            >
+              <a
+                href="/#services"
+                onClick={() => setIsActive("Services")}
+                className={`${
+                  history.hash === "#services"
+                    ? "text-[#ff9c00] dark:text-[#000] text-sm"
+                    : " text-[#999999] font-[500] dark:text-white relative text-sm dark:hover:text-[#000] hover:text-[#ff9c00]"
+                }`}
+              >
+                Services
+              </a>
+              {history.hash === "#services" && <Span />}
+            </motion.div>
+            <motion.div
+              className="relative pb-4"
+              onClick={handleNav}
+              variants={itemsVariants}
+            >
+              <p
+                onClick={() => {
+                  setIsActive("Team");
+                  navigate(`/team`);
+                }}
+                className={`${
+                  history.pathname === "/team"
+                    ? "text-[#ff9c00] dark:text-[#000] text-sm cursor-pointer"
+                    : "text-[#999999] font-[500] dark:text-white cursor-pointer relative text-sm dark:hover:text-[#000] hover:text-[#ff9c00]"
+                }`}
+              >
+                Team
+              </p>
+              {history.pathname === "/team" && <Span />}
+            </motion.div>
+            <motion.a href="#contactUs" variants={itemsVariants}>
+              <Button
+                onClick={handleNav}
+                type="button"
+                className="dark:bg-[#fff]
+              dark:text-[#000] bg-black text-white p-[13px] 
+              rounded-[10px] text-sm shadow-[0px_5px_20px_#BDDFFF] dark:hover:text-[#fff] dark:hover:bg-[#000] 
+              hover:text-[#ff9c00]"
+                aria-label="contact-us-button"
+              >
+                Contact us
+              </Button>
+            </motion.a>
+          </motion.nav>
+        </div>
+      )}
     </div>
   );
 }
