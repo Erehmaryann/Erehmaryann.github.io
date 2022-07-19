@@ -1,11 +1,12 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import ErrorBoundary from "./components/error-boundary";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 
 const App = lazy(() => import("./App"));
 const Loader = lazy(() => import("./components/common/loader/loader"));
+const ErrorBoundary = lazy(() => import("./components/error-boundary"));
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <ErrorBoundary>
     <Suspense fallback={<Loader />}>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </Suspense>
   </ErrorBoundary>
 );

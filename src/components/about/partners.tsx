@@ -1,9 +1,18 @@
 import React from "react";
 import { partnerData } from "./partner-data";
+import { motion } from "framer-motion";
+import { containerVariants } from "../company/variants";
 
 function Partners() {
   return (
-    <section className="flex flex-col items-center w-full bg-black sm:p-4">
+    <motion.section
+      className="flex flex-col items-center w-full bg-black sm:p-4"
+      variants={containerVariants}
+      initial="hidden"
+      exit="exit"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <div className="py-[21px] md:text-center md:w-[300px]">
         <h3 className="font-[700] text-white py-[8px] text-[1.8rem]">
           Our Partners
@@ -20,7 +29,7 @@ function Partners() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

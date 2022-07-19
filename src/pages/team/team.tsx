@@ -1,12 +1,40 @@
 import React from "react";
+import { motion } from "framer-motion";
 import teamBg from "../../assets/team-bg.png";
 
 const Executive = React.lazy(() => import("./executive"));
 const TeamMembers = React.lazy(() => import("./team-members"));
 
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    x: "-100vw",
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      delay: 0.5,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: {
+      ease: "easeInOut",
+    },
+  },
+};
+
 function Team() {
   return (
-    <div className="w-screen">
+    <motion.div
+      className="w-screen"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <section
         id="hero"
         className="relative h-[70vh] w-full flex justify-center items-center"
@@ -30,7 +58,7 @@ function Team() {
         <Executive />
         <TeamMembers />
       </section>
-    </div>
+    </motion.div>
   );
 }
 

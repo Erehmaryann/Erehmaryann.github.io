@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { containerVariants } from "../company/variants";
+
 import update from "../../assets/update.png";
 import trust from "../../assets/trust.png";
 import award from "../../assets/award.png";
@@ -6,7 +9,14 @@ import hours from "../../assets/hours.png";
 
 function WhyUs() {
   return (
-    <section className="flex flex-col items-center w-full sm:p-4 md:py-[100px]">
+    <motion.section
+      className="flex flex-col items-center w-full sm:p-4 md:py-[100px]"
+      variants={containerVariants}
+      initial="hidden"
+      exit="exit"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <div className="sm:pt-[21px] md:pt-0 pb-[35px] md:text-center md:w-[300px]">
         <h3 className="font-[700] text-[#333535] pb-[8px] text-[1.8rem]">
           Why choosing us?
@@ -80,7 +90,7 @@ function WhyUs() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

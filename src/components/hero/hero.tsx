@@ -31,7 +31,7 @@ function Hero() {
     >
       <div className="absolute left-0 right-0 w-full h-full">
         <img
-          className="object-cover h-full"
+          className="object-cover w-full h-full"
           src={sliderData[slide].src}
           alt="hero bg-img"
         />

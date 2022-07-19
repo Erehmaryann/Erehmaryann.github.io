@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import { lazy } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 const MainNav = lazy(() => import("./components/nav-bar/main-nav"));
 const MobileNav = lazy(() => import("./components/nav-bar/mobile-nav"));
@@ -10,17 +11,21 @@ const Footer = lazy(() => import("./components/footer/footer"));
 const ThemeContextWrapper = lazy(() => import("./context/ThemeContextWrapper"));
 
 const App: FC = () => {
+  const location = useLocation();
+
   return (
-    <div id="App">
+    <div>
       <ThemeContextWrapper>
-        <BrowserRouter>
-          <MainNav />
-          <MobileNav />
-          <Routes>
+        {/* <BrowserRouter> */}
+        <MainNav />
+        <MobileNav />
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.key}>
             <Route path="/" element={<Home />} />
             <Route path="team" element={<Team />} />
           </Routes>
-        </BrowserRouter>
+        </AnimatePresence>
+        {/* </BrowserRouter> */}
         <Footer />
       </ThemeContextWrapper>
     </div>

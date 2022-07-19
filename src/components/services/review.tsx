@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { containerVariants } from "../company/variants";
 import { LeftArrow, LeftArrowActive, RightArrow } from "./icons";
 import reviewDarkBg from "../../assets/review-dark-bg.png";
 import reviewLightBg from "../../assets/review-light-bg.png";
@@ -25,7 +27,14 @@ function Review() {
   };
 
   return (
-    <section className="flex flex-col items-center w-full sm:pb-8 md:pb-0">
+    <motion.section
+      className="flex flex-col items-center w-full sm:pb-8 md:pb-0"
+      variants={containerVariants}
+      initial="hidden"
+      exit="exit"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <div className="md:pt-0 pb-[35px] md:text-center md:w-[500px]">
         <h3 className="font-[700] text-[#333535] pb-[8px] text-[1.8rem] dark:text-white">
           What our customer says
@@ -89,7 +98,7 @@ function Review() {
           <RightArrow />
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

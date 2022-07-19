@@ -1,4 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+import { containerVariants } from "./variants";
+
 import people from "../../assets/people.png";
 import v from "../../assets/v.png";
 import lightV from "../../assets/light-v.png";
@@ -11,7 +15,14 @@ function Company() {
       id="company"
       className="w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
     >
-      <div className="flex flex-col items-center justify-center w-full h-full sm:p-4 md:px-0 md:pb-0">
+      <motion.div
+        className="flex flex-col items-center justify-center w-full h-full sm:p-4 md:px-0 md:pb-0"
+        variants={containerVariants}
+        initial="hidden"
+        exit="exit"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <div className="sm:pt-8 md:text-center">
           <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px]">
             Customer trust is our goal
@@ -78,7 +89,7 @@ function Company() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
