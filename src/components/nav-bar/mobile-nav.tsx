@@ -65,7 +65,7 @@ function MobileNav() {
           <motion.nav
             animate={showNav ? "open" : "closed"}
             variants={variants}
-            className="justify-center p-8 top-[90px] right-[10px] bg-white absolute flex-col items-center border h-[350px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]"
+            className="justify-center p-8 top-[90px] right-[10px] bg-white absolute flex-col items-center border h-[277px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]"
           >
             <motion.div
               className="relative pb-4"
