@@ -5,7 +5,7 @@ function Hero() {
   const [slide, setSlide] = React.useState<number>(0);
 
   const handleSlide = () => {
-    if (slide < 2) {
+    if (slide < 3) {
       setSlide((prevState) => prevState + 1);
     } else setSlide(0);
   };
@@ -36,18 +36,20 @@ function Hero() {
           alt="hero bg-img"
         />
       </div>
-      <div className="z-10 absolute flex h-full justify-end flex-col pb-[35px] items-start md:w-[55%] sm:p-4 md:p-0">
-        <h1 className="text-[#fff] md:w-[45%] text-[2.6rem] font-bold leading-10 pl-1">
-          {sliderData[slide].leadText}
-        </h1>
-        <p className="text-[#ff9c00] md:w-[90%] pt-[21px] pb-[33px] text-[1rem] pl-1 my-3 bg-[rgba(0,0,0,0.5)]">
-          {sliderData[slide].paragraph}
-        </p>
-        <p className="border-b-[3px] border-[#fff] w-[15%]"></p>
-        <div className="flex justify-center items-center w-[100%] mt-[140px] mb-10">
-          {sliderData.map((data) => (
-            <Span key={data.id} pin={data.id} />
-          ))}
+      <div className="bg-[rgba(0,0,0,0.6)] w-full h-full z-10 absolute flex justify-center">
+        <div className="flex h-full justify-end flex-col pb-[35px] items-start md:w-[55%] sm:p-4 md:p-0">
+          <h1 className="text-[#fff] md:w-[55%] text-[2.6rem] font-bold leading-11 pl-1">
+            {sliderData[slide].leadText}
+          </h1>
+          <p className="text-[#ff9c00] md:w-[90%] py-[21px] text-[1rem] my-3">
+            {sliderData[slide].paragraph}
+          </p>
+          <p className="border-b-[3px] border-[#fff] w-[15%]"></p>
+          <div className="flex justify-center items-center w-[100%] mt-[140px] mb-10">
+            {sliderData.map((data) => (
+              <Span key={data.id} pin={data.id} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
