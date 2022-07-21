@@ -1,43 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { fadeInDown } from "../../components/services/variants";
 import teamBg from "../../assets/team-bg.png";
 
 const Executive = React.lazy(() => import("./executive"));
 const TeamMembers = React.lazy(() => import("./team-members"));
 
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-    x: "-100vw",
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: "spring",
-      delay: 0.5,
-    },
-  },
-  exit: {
-    x: "-100vw",
-    transition: {
-      ease: "easeInOut",
-    },
-  },
-};
-
 function Team() {
   return (
     <motion.div
       className="w-screen"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
     >
-      <section
+      <motion.section
         id="hero"
         className="relative h-[70vh] w-full flex justify-center items-center"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
       >
         <div className="absolute left-0 right-0 w-full h-full">
           <img className="object-cover h-full" src={teamBg} alt="hero bg-img" />
@@ -53,7 +36,7 @@ function Team() {
             that it has a more-or-less normal distribution.
           </p>
         </div>
-      </section>
+      </motion.section>
       <section className="flex flex-col items-center justify-center dark:bg-[#6C6C6C] w-full">
         <Executive />
         <TeamMembers />

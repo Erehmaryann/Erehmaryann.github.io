@@ -1,13 +1,31 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeInDown } from "../../components/services/variants";
 import { executiveData1, executiveData2 } from "./executive-data";
 
 function Executive() {
   return (
-    <div className="bg-[#FBFBFA] dark:bg-[#A4A4A4] md:p-[44px] sm:p-8 rounded-[10px] md:w-[65%] md:mb-[100px] sm:mx-4 sm:mb-10">
-      <h2 className="text-[#000] dark:text-[#fff] font-[700] text-[1.5rem] text-center pb-[35px]">
+    <motion.div
+      className="bg-[#FBFBFA] dark:bg-[#A4A4A4] md:p-[44px] sm:p-8 rounded-[10px] md:w-[65%] md:mb-[100px] sm:mx-4 sm:mb-10"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
+    >
+      <motion.h2
+        className="text-[#000] dark:text-[#fff] font-[700] text-[1.5rem] text-center pb-[35px]"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         Executives
-      </h2>
-      <div className="flex flex-wrap justify-between w-full">
+      </motion.h2>
+      <motion.div
+        className="flex flex-wrap justify-between w-full"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         {executiveData1.map((item) => (
           <div
             className="flex flex-col sm:pb-6 md:pb-6 sm:w-[100%] md:w-auto"
@@ -26,8 +44,13 @@ function Executive() {
             </p>
           </div>
         ))}
-      </div>
-      <div className="flex flex-wrap justify-between w-full">
+      </motion.div>
+      <motion.div
+        className="flex flex-wrap justify-between w-full"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         {executiveData2.map((item) => (
           <div
             className="flex flex-col sm:pb-6 md:pb-6 sm:w-[100%] md:w-auto"
@@ -46,8 +69,8 @@ function Executive() {
             </p>
           </div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
