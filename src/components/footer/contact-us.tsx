@@ -13,8 +13,11 @@ function ContactUs() {
       <div className="md:w-[70%] flex justify-between sm:flex-wrap items-center">
         <div className="flex flex-col items-start justify-center md:w-[30%]">
           <p className="text-[0.7rem] font-[500] text-[#D3D3D3] pb-4">
-            Since 1987 established fact that a reader will be distracted by the
-            readable content of a page.
+            <b className="text-white">Address:</b> Amb. Albert Osakwe House, 143
+            Inner Block Street, Central Business District, Abuja.
+          </p>
+          <p className="text-[0.7rem] font-[500] text-[#D3D3D3] pb-4">
+            <b className="text-white">Meet Us:</b> info@jamfortetech.org
           </p>
           <div className="flex flex-wrap">
             <a
@@ -185,7 +188,7 @@ function ContactUs() {
             <h6 className="text-white font-[700] text-[0.9rem]">
               Request Call
             </h6>
-            <form className="pt-[15px] pb-2">
+            <form className="pt-[14px] pb-2">
               <a href="tel:+234-704-550-9455">
                 <Button
                   type="button"
@@ -195,6 +198,15 @@ function ContactUs() {
                 </Button>
               </a>
             </form>
+            {/* <p className="text-[0.7rem] pt-[14px] font-[500] text-[#D3D3D3] pb-4">
+              <b className="text-white">Call Us:</b>
+            </p>
+            <p className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]">
+              +234-704-559455,
+            </p>
+            <p className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]">
+              +234-809-666-8657
+            </p> */}
           </div>
         </div>
       </div>
