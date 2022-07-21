@@ -22,7 +22,7 @@ function MobileNav() {
   };
 
   return (
-    <div className="md:hidden sm:flex dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20">
+    <div className="md:hidden sm:flex dark:bg-[#6C6C6C] bg-white justify-center items-center fixed top-0 left-0 right-0 w-full z-20">
       <header className="relative flex items-center justify-between w-full">
         <div className="w-[120px]">
           <a href="/">
