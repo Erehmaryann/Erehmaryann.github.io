@@ -28,7 +28,7 @@ function Feature() {
         </p>
       </motion.div>
       <motion.div
-        className="flex flex-col justify-between items-center md:w-[55%] sm:w-full xl:w-[65%] md:pt-[40px]"
+        className="flex flex-col justify-between items-center md:w-[65%] sm:w-full lg:w-[65%] xl:w-[65%] md:pt-[40px]"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
@@ -37,7 +37,7 @@ function Feature() {
           {featureData.map((data) => (
             <div
               key={data.id}
-              className="flex justify-between flex-col items-center md:mx-8 sm:w-[45%] lg:w-[25%] xl:w-[25%] bg-[#ffffff] rounded py-4 px-8 mb-6"
+              className="flex justify-between flex-col items-center md:mx-8 sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[25%] bg-[#ffffff] rounded py-4 px-8 mb-6"
             >
               <img
                 className="mx-auto"
