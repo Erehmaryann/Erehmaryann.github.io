@@ -6,9 +6,11 @@ function Loader() {
   const [isVisible, setIsVisible] = React.useState(true);
 
   React.useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 7000);
+    }, 8000);
+
+    return () => clearTimeout(timer);
   }, []);
   return (
     <div className="bg-[rgba(255,255,255,0.1)] h-screen w-screen">

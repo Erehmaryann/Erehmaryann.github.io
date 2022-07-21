@@ -14,7 +14,7 @@ function Feature() {
       viewport={{ once: true }}
     >
       <motion.div
-        className="sm:pt-[32px] md:w-[55%] md:pt-0 pb-[35px] md:text-center"
+        className="sm:pt-[32px] md:w-[55%] md:pt-0 pb-[35px] md:text-center flex flex-col items-center justify-center"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
@@ -22,10 +22,9 @@ function Feature() {
         <h3 className="font-[700] text-[#333535] dark:text-white pb-[8px] text-[1.8rem]">
           What We Offer
         </h3>
-        <p className="text-[rgba(0, 0, 0, 0.86)] dark:text-white pt-2 font-[400] text-[0.7rem]">
-          Providing easy viewing to the real-time status of your account, the
-          Dashboard allows users to customize views, manage multiple account
-          from one control panel.
+        <p className="text-[rgba(0, 0, 0, 0.86)] dark:text-white pt-2 font-[400] text-[0.7rem] md:w-[400px]">
+          We provide state-of-the-art IT solutions and services delivered with
+          the right technological tools tailored for your business needs.
         </p>
       </motion.div>
       <motion.div
@@ -34,25 +33,19 @@ function Feature() {
         initial="initial"
         animate="animate"
       >
-        <div className="flex flex-wrap justify-between md:w-auto sm:w-full">
+        <div className="flex flex-wrap justify-between w-full">
           {featureData.map((data) => (
             <div
               key={data.id}
-              className="flex justify-between flex-col items-center pb-10 md:mx-8 sm:w-[40%] lg:w-[25%] bg-white dark:bg-[#7b7575] rounded p-6 mb-4"
+              className="flex justify-between flex-col items-center md:mx-8 sm:w-[45%] lg:w-[25%] bg-[#ffffff] rounded py-4 px-8 mb-6"
             >
               <img
-                className="mx-auto dark:hidden"
-                src={data.src2}
-                width={30}
-                alt={`${data.text}`}
-              />
-              <img
-                className="hidden mx-auto dark:block"
+                className="mx-auto"
                 src={data.src}
-                width={30}
                 alt={`${data.text}`}
+                width={80}
               />
-              <h6 className="dark:text-[#ff9c00] text-[#23232B] font-[700] text-[0.7rem] text-center pt-2 whitespace-pre-line">
+              <h6 className="text-[#000] font-[700] text-[0.7rem] text-center whitespace-pre-line">
                 {data.text}
               </h6>
             </div>

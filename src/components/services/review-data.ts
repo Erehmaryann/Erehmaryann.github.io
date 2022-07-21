@@ -8,7 +8,7 @@ export const reviewData = [
     jobTitle: "Software Engineer",
     count: 5,
     reviewText:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.",
+      "Jam Forte Technologies has helped me with a number of projects and I would recommend them to anyone who is looking for software development and web development.",
   },
   {
     id: "2",
@@ -17,7 +17,7 @@ export const reviewData = [
     jobTitle: "Full-stack Engineer",
     count: 5,
     reviewText:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.",
+      "Jam Forte Technologies has been an essential part of our business. They have helped us to grow and expand, and I'm confident that they will be able to do the same for anyone else who chooses to work with them.",
   },
   {
     id: "3",
@@ -26,6 +26,6 @@ export const reviewData = [
     jobTitle: "Frontend Developer",
     count: 5,
     reviewText:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.",
+      "I would like to commend Jam Forte for their work in development. They have really shown that they are willing to go the extra mile and have never failed to execute on deadlines no matter how difficult the task may be.",
   },
 ];

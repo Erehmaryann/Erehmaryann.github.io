@@ -43,11 +43,10 @@ function Services() {
               Our Services
             </h3>
             <p className="text-[#6C6C6C] dark:text-white font-[500] text-[0.7rem] pt-2 leading-5">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution. <br /> <br />
-              The point of using Lorem Ipsum is that it has.
+              Our team of experts is dedicated to providing you with the best
+              possible service. We understand that every client is different, so
+              we take the time to listen to your concerns and create a plan that
+              meets your specific needs.
             </p>
             <a href="/">
               <Button

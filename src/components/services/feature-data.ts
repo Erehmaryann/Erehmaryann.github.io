@@ -1,77 +1,75 @@
-import featureDark from "../../assets/feature.png";
-import featureLight from "../../assets/feature-light.png";
+import webDev from "../../assets/svg/web-dev.svg";
+import mobileDev from "../../assets/svg/mobile-dev.svg";
+import softwareDev from "../../assets/svg/software-dev.svg";
+import enterprise from "../../assets/svg/enterprise.svg";
+import artificial from "../../assets/svg/artificial.svg";
+import proManagement from "../../assets/svg/pro-management.svg";
+import logistics from "../../assets/svg/logistics.svg";
+import networking from "../../assets/svg/networking.svg";
+import gameDev from "../../assets/svg/game-dev.svg";
+import corporate from "../../assets/svg/corporate.svg";
+import branding from "../../assets/svg/branding.svg";
+import consultancy from "../../assets/svg/consultancy.svg";
 
 export const featureData = [
   {
     id: 1,
-    src: featureDark,
-    src2: featureLight,
+    src: webDev,
     text: "Web Development",
   },
   {
     id: 2,
-    src: featureDark,
-    src2: featureLight,
+    src: mobileDev,
     text: "Mobile Development",
   },
   {
     id: 3,
-    src: featureDark,
-    src2: featureLight,
+    src: softwareDev,
     text: "Custom Software Development",
   },
   {
     id: 4,
-    src: featureDark,
-    src2: featureLight,
+    src: enterprise,
     text: "Enterprise System",
   },
   {
     id: 5,
-    src: featureDark,
-    src2: featureLight,
+    src: artificial,
     text: "Artificial Intelligence",
   },
   {
     id: 6,
-    src: featureDark,
-    src2: featureLight,
+    src: gameDev,
     text: "Game Development",
   },
   {
     id: 7,
-    src: featureDark,
-    src2: featureLight,
+    src: proManagement,
     text: "IT Product management",
   },
   {
     id: 8,
-    src: featureDark,
-    src2: featureLight,
+    src: logistics,
     text: "Logistics–eCommerce",
   },
   {
     id: 9,
-    src: featureDark,
-    src2: featureLight,
+    src: networking,
     text: "Networking",
   },
   {
     id: 10,
-    src: featureDark,
-    src2: featureLight,
+    src: corporate,
     text: "Corporate Services",
   },
   {
     id: 11,
-    src: featureDark,
-    src2: featureLight,
+    src: branding,
     text: "Branding",
   },
   {
     id: 12,
-    src: featureDark,
-    src2: featureLight,
+    src: consultancy,
     text: "IT Consultancy",
   },
 ];

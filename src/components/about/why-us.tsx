@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeInDown } from "../services/variants";
 
-import update from "../../assets/update.svg";
-import trust from "../../assets/trust.svg";
-import award from "../../assets/award.svg";
-import hours from "../../assets/hours.svg";
+import update from "../../assets/svg/update.svg";
+import trust from "../../assets/svg/trust.svg";
+import award from "../../assets/svg/award.svg";
+import hours from "../../assets/svg/hours.svg";
 
 function WhyUs() {
   return (
@@ -17,7 +17,7 @@ function WhyUs() {
       viewport={{ once: true }}
     >
       <motion.div
-        className="sm:pt-[21px] md:pt-0 pb-[35px] md:text-center md:w-[300px]"
+        className="sm:pt-[21px] md:pt-0 pb-[35px] md:text-center md:w-[400px]"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
@@ -26,8 +26,9 @@ function WhyUs() {
           Why Choose Us
         </h3>
         <p className="text-[#6C6C6C] font-[500] text-[0.7rem]">
-          The point of using Lorem Ipsum is that it has a more-or-less normal
-          distribution.
+          Our team is dedicated to providing top-quality service to our clients.
+          We also care about our clients and their businesses; we want them to
+          succeed.
         </p>
       </motion.div>
       <motion.div

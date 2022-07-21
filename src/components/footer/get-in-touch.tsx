@@ -27,8 +27,9 @@ function GetTouch() {
           initial="initial"
           animate="animate"
         >
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+          We have a team of experienced professionals with great expertise in
+          the IT Industry who are dedicated to turning your business Ideas into
+          Reality.
         </motion.p>
       </div>
     </motion.section>
