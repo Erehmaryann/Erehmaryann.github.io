@@ -9,9 +9,9 @@ const Button = React.lazy(() => import("../common/button/button"));
 
 function ContactUs() {
   return (
-    <section className="relative bg-[#333535] w-full flex justify-center items-center sm:px-4 sm:py-8 md:py-[100px]">
-      <div className="md:w-[65%] flex justify-between sm:flex-wrap md:flex-nowrap items-center">
-        <div className="flex flex-col items-start justify-center md:w-[40%]">
+    <section className="relative bg-[#333535] w-full flex justify-center items-center flex-wrap sm:px-4 sm:py-8 md:py-[100px]">
+      <div className="md:w-[70%] flex justify-between sm:flex-wrap items-center">
+        <div className="flex flex-col items-start justify-center md:w-[30%]">
           <p className="text-[0.7rem] font-[500] text-[#D3D3D3] pb-4">
             Since 1987 established fact that a reader will be distracted by the
             readable content of a page.
@@ -51,9 +51,9 @@ function ContactUs() {
             </a>
           </div>
         </div>
-        <div className="flex justify-between flex-wrap sm:flex-col lg:flex-row h-full md:w-[50%]">
-          <div className="flex flex-col sm:pt-[35px] md:pt-0 items-start">
-            <h6 className="text-white font-[700] text-[0.9rem]">Company</h6>
+        <div className="flex justify-between flex-wrap lg:flex-row h-full md:w-[60%] sm:w-[100%]">
+          <div className="flex flex-col sm:pt-[35px] md:pt-0 items-start sm:w-[40%] md:w-[30%] lg:w-[25%]">
+            <h6 className="text-white font-[700] text-[0.9rem]">Our Company</h6>
             <ul className="pt-[15px]">
               <li className="pb-2">
                 <a
@@ -95,11 +95,6 @@ function ContactUs() {
                   Team
                 </a>
               </li>
-            </ul>
-          </div>
-          <div className="flex flex-col sm:pt-[35px] md:pt-0 items-start">
-            <h6 className="text-white font-[700] text-[0.9rem]">Others</h6>
-            <ul className="pt-[15px]">
               <li className="pb-2">
                 <a
                   href="#contactUs"
@@ -110,7 +105,83 @@ function ContactUs() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col sm:pt-[35px] md:pt-0 items-start">
+          <div className="flex flex-col sm:pt-[35px] md:pt-0 items-start sm:w-[40%] md:w-[30%] lg:w-[25%]">
+            <h6 className="text-white font-[700] text-[0.9rem]">Our Product</h6>
+            <ul className="pt-[15px]">
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Paysequr
+                </a>
+              </li>
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Gigflut
+                </a>
+              </li>
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Logiscomm
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col sm:pt-[35px] md:pt-0 items-start sm:w-[40%] md:w-[30%] lg:w-[25%]">
+            <h6 className="text-white font-[700] text-[0.9rem]">
+              Our Services
+            </h6>
+            <ul className="pt-[15px]">
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Web Development
+                </a>
+              </li>
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Mobile Development
+                </a>
+              </li>
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Enterprise System
+                </a>
+              </li>
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Branding
+                </a>
+              </li>
+              <li className="pb-2">
+                <a
+                  href="#contactUs"
+                  className="hover:text-[#ff9c00] text-[#D3D3D3] text-[0.7rem]"
+                >
+                  Corporate Services
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col sm:pt-[35px] items-start sm:w-[40%] md:w-[30%] lg:w-[25%] lg:pt-0">
             <h6 className="text-white font-[700] text-[0.9rem]">
               Request Call
             </h6>
@@ -127,7 +198,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
-      <div className="absolute right-8 bottom-10">
+      <div className="absolute right-6 bottom-6">
         <a href="#hero">
           <img src={toTop} alt="to top button" width={31} />
         </a>

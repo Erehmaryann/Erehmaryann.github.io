@@ -4,7 +4,7 @@ function GetTouch() {
   return (
     <section className="flex justify-center items-center bg-[#ff9c00] sm:p-4 md:py-[35px]">
       <div className="flex flex-wrap justify-between items-center md:w-[45%]">
-        <h3 className="font-[700] text-white text-[1.7rem] italic md:w-[35%]">
+        <h3 className="font-[700] text-white text-[1.7rem]  md:w-[40%]">
           Get In Touch With Our Teams
         </h3>
 

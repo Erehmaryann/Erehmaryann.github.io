@@ -38,7 +38,7 @@ function WhyUs() {
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
               Lifetime Support
             </h6>
-            <p className="italic text-[#909090] text-[0.8rem] font-[600] dark:text-[#000]">
+            <p className=" text-[#909090] text-[0.8rem] font-[400] dark:text-[#000]">
               We offer lifetime support for all project deployed.
             </p>
           </div>
@@ -54,7 +54,7 @@ function WhyUs() {
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
               Trustworthy
             </h6>
-            <p className="italic text-[#909090] text-[0.8rem] font-[600] dark:text-[#000]">
+            <p className=" text-[#909090] text-[0.8rem] font-[400] dark:text-[#000]">
               Be rest assured that your confidential credentials supplied to us
               are safe and will not be used without your notice.
             </p>
@@ -73,7 +73,7 @@ function WhyUs() {
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
               Innovation beyond initial idea
             </h6>
-            <p className="italic text-[#909090] text-[0.8rem] font-[600] dark:text-[#000]">
+            <p className=" text-[#909090] text-[0.8rem] font-[400] dark:text-[#000]">
               We develop ideas brought to us by clients to ensure they achieve a
               possible maximum result.
             </p>
@@ -90,7 +90,7 @@ function WhyUs() {
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
               Encrypted Development
             </h6>
-            <p className="italic text-[#909090] text-[0.8rem] font-[600] dark:text-[#000]">
+            <p className=" text-[#909090] text-[0.8rem] font-[400] dark:text-[#000]">
               We put all security consideration in check while building projects
               for our client.
             </p>

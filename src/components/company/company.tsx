@@ -27,7 +27,7 @@ function Company() {
           <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px]">
             Customer trust is our goal
           </h1>
-          <p className="text-[#6C6C6C] dark:text-white pt-2 text-[0.7rem] font-[500]">
+          <p className="text-[#6C6C6C] dark:text-white pt-4 text-[0.7rem] font-[500]">
             The point of using Lorem Ipsum is that it has.
           </p>
         </div>
@@ -53,7 +53,7 @@ function Company() {
             <h4 className="z-10 dark:text-[#ff9c00] text-[0.9rem] font-[700] my-[-8px]">
               Our Vision
             </h4>
-            <p className="z-10 text-[0.7rem] font-[600] text-[#909090] dark:text-[#fff] italic pt-[8px]">
+            <p className="z-10 text-[0.7rem] font-[500] text-[#909090] dark:text-[#fff]  pt-[8px]">
               To become a major IT service provider in Africa, delivering
               excellent service to all industry
             </p>

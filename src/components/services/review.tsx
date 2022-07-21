@@ -77,7 +77,7 @@ function Review() {
             <h6 className="z-10 text-[#0A72D2] text-[0.8rem] font-[500] dark:text-[#ff9c00]">
               {reviewData[slider].jobTitle}
             </h6>
-            <p className="z-10 text-[#919191] dark:text-[#ff9c00] italic font-[400] py-3 text-[0.7rem] text-center md:w-[60%] ">
+            <p className="z-10 text-[#919191] dark:text-[#ff9c00]  font-[400] py-3 text-[0.7rem] text-center md:w-[60%] ">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less.
