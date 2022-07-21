@@ -17,7 +17,7 @@ function Services() {
             <img
               src={services}
               alt="services"
-              className="w-full md:h-auto sm:h-full md:mx-[-32px] md:mt-[-32px]"
+              className="w-full md:h-auto sm:h-full md:mx-[-32px]"
             />
           </div>
           <div className="flex justify-center flex-col h-[40%] md:w-[45%] sm:w-[100%] sm:pb-8 md:mt-10 md:pl-[2.5rem]">
