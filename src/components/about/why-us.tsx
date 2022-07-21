@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { containerVariants } from "../company/variants";
 
-import update from "../../assets/update.png";
-import trust from "../../assets/trust.png";
-import award from "../../assets/award.png";
-import hours from "../../assets/hours.png";
+import update from "../../assets/update.svg";
+import trust from "../../assets/trust.svg";
+import award from "../../assets/award.svg";
+import hours from "../../assets/hours.svg";
 
 function WhyUs() {
   return (
@@ -32,6 +32,7 @@ function WhyUs() {
             src={update}
             alt="lifetime update"
             className="sm:ml-[-12px] md:ml-0"
+            width={84}
           />
           <div className="flex flex-col md:w-[280px]">
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
@@ -47,6 +48,7 @@ function WhyUs() {
             src={trust}
             alt="trust worthy icon"
             className="sm:ml-[-12px] md:ml-0"
+            width={84}
           />
           <div className="flex flex-col md:w-[280px]">
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
@@ -65,6 +67,7 @@ function WhyUs() {
             src={award}
             alt="award winning icon"
             className="sm:ml-[-12px] md:ml-0"
+            width={84}
           />
           <div className="flex flex-col md:w-[280px]">
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
@@ -81,6 +84,7 @@ function WhyUs() {
             src={hours}
             alt="support icon"
             className="sm:ml-[-12px] md:ml-0"
+            width={84}
           />
           <div className="flex flex-col md:w-[280px]">
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
