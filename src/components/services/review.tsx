@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { containerVariants } from "../company/variants";
+import { fadeInUp } from "./variants";
 import { LeftArrow, LeftArrowActive, RightArrow } from "./icons";
 import reviewDarkBg from "../../assets/review-dark-bg.png";
 import reviewLightBg from "../../assets/review-light-bg.png";
@@ -29,10 +29,11 @@ function Review() {
   return (
     <motion.section
       className="flex flex-col items-center w-full sm:pb-8 md:pb-0"
-      variants={containerVariants}
-      initial="hidden"
-      exit="exit"
-      whileInView="visible"
+      variants={fadeInUp}
+      initial="initial"
+      animate="animate"
+      // whileInView="visible"
+      whileInView="true"
       viewport={{ once: true }}
     >
       <div className="md:pt-0 pb-[35px] md:text-center md:w-[500px]">

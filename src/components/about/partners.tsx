@@ -15,7 +15,7 @@ function Partners() {
     >
       <div className="py-[21px] md:text-center md:w-[300px]">
         <h3 className="font-[700] text-white py-[8px] text-[1.8rem]">
-          Our Partners
+          OUR HAPPY CLIENTS
         </h3>
         <p className="text-[#ff9c00] font-[500] text-[0.7rem]">
           The point of using Lorem Ipsum is that it has a more-or-less normal

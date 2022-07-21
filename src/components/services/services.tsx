@@ -1,5 +1,5 @@
 import React from "react";
-import services from "../../assets/services.png";
+import services from "../../assets/services.svg";
 
 const Button = React.lazy(() => import("../common/button/button"));
 const Feature = React.lazy(() => import("./feature"));

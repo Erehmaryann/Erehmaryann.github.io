@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 import { containerVariants } from "./variants";
 
-import people from "../../assets/people.png";
+import people from "../../assets/people.svg";
 import v from "../../assets/v.png";
 import lightV from "../../assets/light-v.png";
-import ladies from "../../assets/ladies.png";
+import ladies from "../../assets/ladies.svg";
 import Button from "../common/button/button";
 
 function Company() {
@@ -36,7 +36,7 @@ function Company() {
             <img
               src={people}
               alt="people"
-              className="w-full md:h-auto sm:h-full m-[-35px]"
+              className="w-full md:h-auto sm:h-full mx-[-35px]"
             />
           </div>
           <div className="relative flex justify-center flex-col h-[30%] md:w-[45%] sm:w-[100%] sm:pb-8 md:py-4">
@@ -51,25 +51,24 @@ function Company() {
               alt="vision bg"
             />
             <h4 className="z-10 dark:text-[#ff9c00] text-[0.9rem] font-[700] my-[-8px]">
-              Company Vision
+              Our Vision
             </h4>
             <p className="z-10 text-[0.7rem] font-[600] text-[#909090] dark:text-[#fff] italic pt-[8px]">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more.
+              To become a major IT service provider in Africa, delivering
+              excellent service to all industry
             </p>
           </div>
         </div>
         <div className="md:w-[55%] flex justify-between items-center sm:pb-14 md:pb-[100px] h-auto md:flex-row sm:flex-col sm:pt-[35px]">
           <div className="flex justify-center items-start flex-col h-[40%] md:w-[45%] sm:w-[100%] sm:pb-8 md:mt-10">
             <h3 className="text-[1.8rem] font-[700] text-[#333535] dark:text-[#fff]">
-              Company Mission
+              Our Mission
             </h3>
             <p className="text-[#6C6C6C] dark:text-white font-[500] text-[0.7rem] pt-2 leading-5">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution.
+              Delivering top-notch service in web development, Mobile
+              development, Software’s and Enterprise System development,
+              Artificial Intelligence, Networking, and Hardware Manufacturing,
+              all geared towards solving socio-economic challenges globally.
             </p>
             <a href="/">
               <Button
@@ -85,7 +84,7 @@ function Company() {
             <img
               src={ladies}
               alt="ladies"
-              className="w-full md:h-auto sm:h-full sm:my-[-10px] md:my-0"
+              className="w-full md:h-auto sm:h-full sm:my-[-10px] md:m-0 sm:mx-auto"
             />
           </div>
         </div>

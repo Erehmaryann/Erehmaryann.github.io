@@ -1,17 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { containerVariants } from "../company/variants";
+// import { motion } from "framer-motion";
+// import { containerVariants } from "../company/variants";
 import { featureData } from "./feature-data";
 
 function Feature() {
   return (
-    <motion.section
+    <section
       className="flex flex-col items-center w-full md:py-[100px]"
-      variants={containerVariants}
-      initial="hidden"
-      exit="exit"
-      whileInView="visible"
-      viewport={{ once: true }}
+      // variants={containerVariants}
+      // initial="hidden"
+      // exit="exit"
+      // whileInView="visible"
+      // viewport={{ once: true }}
     >
       <div className="sm:pt-[32px] md:w-[55%] md:pt-0 pb-[35px] md:text-center">
         <h3 className="font-[500] text-[#000] dark:text-white pb-[8px] text-[1.8rem]">
@@ -67,7 +67,7 @@ function Feature() {
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

@@ -17,16 +17,36 @@ function ContactUs() {
             readable content of a page.
           </p>
           <div className="flex flex-wrap">
-            <a href="/" target="_blank" className="md:mb-2">
+            <a
+              href="https://facebook.com/jamfortetechnologies"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="md:mb-2"
+            >
               <img src={facebook} width={39} alt="facebook" />
             </a>
-            <a href="/" target="_blank" className="pl-4 md:mb-2">
+            <a
+              href="https://twitter.com/jamfortetech"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="pl-4 md:mb-2"
+            >
               <img src={twitter} width={39} alt="twitter" />
             </a>
-            <a href="/" target="_blank" className="px-4 md:mb-2">
+            <a
+              href="https://instagram.com/jamfortetech"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="px-4 md:mb-2"
+            >
               <img src={instagram} width={39} alt="instagram" />
             </a>
-            <a href="/" target="_blank" className="md:mb-2">
+            <a
+              href="https://www.linkedin.com/company/jamfortetech/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="md:mb-2"
+            >
               <img src={linkedin} width={39} alt="linkedin" />
             </a>
           </div>

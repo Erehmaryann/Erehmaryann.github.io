@@ -36,7 +36,7 @@ function Hero() {
           alt="hero bg-img"
         />
       </div>
-      <div className="bg-[rgba(0,0,0,0.6)] w-full h-full z-10 absolute flex justify-center">
+      <div className="bg-[rgba(0,0,0,0.6)] w-full h-full z-10 absolute flex justify-center items-center">
         <div className="flex h-full justify-end flex-col pb-[35px] items-start md:w-[55%] sm:p-4 md:p-0">
           <h1 className="text-[#fff] md:w-[55%] text-[2.6rem] font-bold leading-11 pl-1">
             {sliderData[slide].leadText}
