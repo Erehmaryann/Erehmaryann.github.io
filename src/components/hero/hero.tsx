@@ -35,18 +35,6 @@ function Hero() {
           src={sliderData[slide].src}
           alt="hero bg-img"
         />
-        {/* {sliderData[slide] === sliderData[2] && (
-          <video
-            autoPlay
-            muted
-            loop
-            id="myVideo"
-            className="object-cover w-full h-full"
-          >
-            <source src="../../assets/bg-33.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
-          </video>
-        )} */}
       </div>
       <div className="bg-[rgba(0,0,0,0.6)] w-full h-full z-10 absolute flex justify-center items-center">
         <div className="flex h-full justify-end flex-col pb-[35px] items-start md:w-[55%] sm:p-4 md:p-0">

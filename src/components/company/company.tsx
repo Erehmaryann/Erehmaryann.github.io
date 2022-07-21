@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { fadeInDown } from "../services/variants";
 // import { containerVariants } from "./variants";
 
-import people from "../../assets/people.svg";
+import people from "../../assets/svg/people.svg";
 import v from "../../assets/v.png";
 import lightV from "../../assets/light-v.png";
-import ladies from "../../assets/ladies.svg";
+import ladies from "../../assets/svg/ladies.svg";
 import Button from "../common/button/button";
 
 function Company() {

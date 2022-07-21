@@ -1,5 +1,5 @@
 import React from "react";
-import services from "../../assets/services.svg";
+import services from "../../assets/svg/services.svg";
 import { fadeInDown } from "./variants";
 import { motion } from "framer-motion";
 
