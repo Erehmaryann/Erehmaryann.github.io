@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { containerVariants } from "../company/variants";
+import { fadeInDown } from "../services/variants";
 
 import update from "../../assets/update.svg";
 import trust from "../../assets/trust.svg";
@@ -11,13 +11,17 @@ function WhyUs() {
   return (
     <motion.section
       className="flex flex-col items-center w-full sm:p-4 md:py-[100px]"
-      variants={containerVariants}
-      initial="hidden"
-      exit="exit"
-      whileInView="visible"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <div className="sm:pt-[21px] md:pt-0 pb-[35px] md:text-center md:w-[300px]">
+      <motion.div
+        className="sm:pt-[21px] md:pt-0 pb-[35px] md:text-center md:w-[300px]"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         <h3 className="font-[700] text-[#333535] pb-[8px] text-[1.8rem]">
           Why Choose Us
         </h3>
@@ -25,8 +29,13 @@ function WhyUs() {
           The point of using Lorem Ipsum is that it has a more-or-less normal
           distribution.
         </p>
-      </div>
-      <div className="flex flex-wrap justify-between items-center md:w-[55%] md:pb-[40px]">
+      </motion.div>
+      <motion.div
+        className="flex flex-wrap justify-between items-center md:w-[55%] md:pb-[40px]"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         <div className="flex items-center sm:pb-3 md:pb-0">
           <img
             src={update}
@@ -60,8 +69,13 @@ function WhyUs() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-wrap justify-between items-center md:w-[55%]">
+      </motion.div>
+      <motion.div
+        className="flex flex-wrap justify-between items-center md:w-[55%]"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         <div className="flex items-center sm:pb-3 md:pb-0">
           <img
             src={award}
@@ -96,7 +110,7 @@ function WhyUs() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeInUp } from "./variants";
+import { fadeInDown } from "./variants";
 import { LeftArrow, LeftArrowActive, RightArrow } from "./icons";
 import reviewDarkBg from "../../assets/review-dark-bg.png";
 import reviewLightBg from "../../assets/review-light-bg.png";
@@ -29,22 +29,30 @@ function Review() {
   return (
     <motion.section
       className="flex flex-col items-center w-full sm:pb-8 md:pb-0"
-      variants={fadeInUp}
-      initial="initial"
-      animate="animate"
-      // whileInView="visible"
-      whileInView="true"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <div className="md:pt-0 pb-[35px] md:text-center md:w-[500px]">
+      <motion.div
+        className="md:pt-0 pb-[35px] md:text-center md:w-[500px]"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         <h3 className="font-[700] text-[#333535] pb-[8px] text-[1.8rem] dark:text-white">
           What our customer says
         </h3>
         <p className="text-[#6C6C6C] font-[500] text-[0.7rem] dark:text-white">
           The point of using Lorem Ipsum is that it has.
         </p>
-      </div>
-      <div className="flex flex-nowrap h-[300px] justify-center items-center md:w-[100%] pt-[21px]">
+      </motion.div>
+      <motion.div
+        className="flex flex-nowrap h-[300px] justify-center items-center md:w-[100%] pt-[21px]"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         <button
           type="button"
           disabled={slider === 0}
@@ -98,7 +106,7 @@ function Review() {
         >
           <RightArrow />
         </button>
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

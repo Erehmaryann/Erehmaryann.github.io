@@ -6,24 +6,33 @@ export const featureData = [
     id: 1,
     src: featureDark,
     src2: featureLight,
-    text: "Web-Server",
+    text: "Web Development",
   },
   {
     id: 2,
     src: featureDark,
     src2: featureLight,
-    text: "Web-Server",
+    text: "Mobile Development",
   },
   {
     id: 3,
     src: featureDark,
     src2: featureLight,
-    text: "Web-Server",
+    text: "Custom Software Development",
   },
   {
     id: 4,
     src: featureDark,
     src2: featureLight,
-    text: "Web-Server",
+    text: "Enterprise System",
+  },
+];
+
+export const featureData2 = [
+  {
+    id: 1,
+    src: featureDark,
+    src2: featureLight,
+    text: "Artificial Intelligence",
   },
 ];

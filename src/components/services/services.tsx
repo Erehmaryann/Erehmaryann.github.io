@@ -1,5 +1,7 @@
 import React from "react";
 import services from "../../assets/services.svg";
+import { fadeInDown } from "./variants";
+import { motion } from "framer-motion";
 
 const Button = React.lazy(() => import("../common/button/button"));
 const Feature = React.lazy(() => import("./feature"));
@@ -12,15 +14,31 @@ function Services() {
       className="w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
     >
       <div className="flex flex-col items-center justify-center w-full h-full sm:p-4 md:px-0 md:pb-0">
-        <div className="flex justify-center items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[0px] sm:mt-[35px]">
-          <div className="md:w-[50%] sm:w-[100%] items-start sm:mt-[16px] md:h-auto sm:h-[70%]">
+        <motion.div
+          className="flex justify-center items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[0px] sm:mt-[35px]"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            className="md:w-[50%] sm:w-[100%] items-start sm:mt-[16px] md:h-auto sm:h-[70%]"
+            variants={fadeInDown}
+            initial="initial"
+            animate="animate"
+          >
             <img
               src={services}
               alt="services"
               className="w-full md:h-auto sm:h-full md:mx-[-32px]"
             />
-          </div>
-          <div className="flex justify-center flex-col h-[40%] md:w-[45%] sm:w-[100%] sm:pb-8 md:mt-10 md:pl-[2.5rem]">
+          </motion.div>
+          <motion.div
+            className="flex justify-center flex-col h-[40%] md:w-[45%] sm:w-[100%] sm:pb-8 md:mt-10 md:pl-[2.5rem]"
+            variants={fadeInDown}
+            initial="initial"
+            animate="animate"
+          >
             <h3 className="text-[1.8rem] font-[700] text-[#333535] dark:text-[#fff]">
               Our Services
             </h3>
@@ -40,8 +58,8 @@ function Services() {
                 View more
               </Button>
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <Feature />
         <Review />
       </div>

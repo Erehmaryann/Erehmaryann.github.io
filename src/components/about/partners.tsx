@@ -1,19 +1,23 @@
 import React from "react";
 import { partnerData } from "./partner-data";
 import { motion } from "framer-motion";
-import { containerVariants } from "../company/variants";
+import { fadeInDown } from "../services/variants";
 
 function Partners() {
   return (
     <motion.section
       className="flex flex-col items-center w-full bg-black sm:p-4"
-      variants={containerVariants}
-      initial="hidden"
-      exit="exit"
-      whileInView="visible"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <div className="py-[21px] md:text-center md:w-[300px]">
+      <motion.div
+        className="py-[21px] md:text-center md:w-[300px]"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         <h3 className="font-[700] text-white py-[8px] text-[1.8rem]">
           OUR HAPPY CLIENTS
         </h3>
@@ -21,14 +25,19 @@ function Partners() {
           The point of using Lorem Ipsum is that it has a more-or-less normal
           distribution.
         </p>
-      </div>
-      <div className="flex flex-wrap items-center justify-between pb-4">
+      </motion.div>
+      <motion.div
+        className="flex flex-wrap items-center justify-between pb-4"
+        variants={fadeInDown}
+        initial="initial"
+        animate="animate"
+      >
         {partnerData.map((data) => (
           <div className="md:mx-8" key={data.id}>
             <img src={data.src} alt="partner-logo" className="sm:mb-4" />
           </div>
         ))}
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

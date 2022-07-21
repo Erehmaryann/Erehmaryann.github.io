@@ -1,7 +1,7 @@
-export const fadeInUp = {
+export const fadeInDown = {
   initial: {
     opacity: 0,
-    y: 40,
+    y: -60,
   },
   animate: {
     opacity: 1,

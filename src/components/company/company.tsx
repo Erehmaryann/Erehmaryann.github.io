@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import { containerVariants } from "./variants";
+import { fadeInDown } from "../services/variants";
+// import { containerVariants } from "./variants";
 
 import people from "../../assets/people.svg";
 import v from "../../assets/v.png";
@@ -17,21 +17,30 @@ function Company() {
     >
       <motion.div
         className="flex flex-col items-center justify-center w-full h-full sm:p-4 md:px-0 md:pb-0"
-        variants={containerVariants}
-        initial="hidden"
-        exit="exit"
-        whileInView="visible"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
         viewport={{ once: true }}
       >
-        <div className="sm:pt-8 md:text-center">
+        <motion.div
+          className="sm:pt-8 md:text-center"
+          variants={fadeInDown}
+          initial="initial"
+          animate="animate"
+        >
           <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px]">
             Customer trust is our goal
           </h1>
           <p className="text-[#6C6C6C] dark:text-white pt-4 text-[0.7rem] font-[500]">
             The point of using Lorem Ipsum is that it has.
           </p>
-        </div>
-        <div className="flex h-[60%] justify-between items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[10px] sm:mt-[35px]">
+        </motion.div>
+        <motion.div
+          className="flex h-[60%] justify-between items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[10px] sm:mt-[35px]"
+          variants={fadeInDown}
+          initial="initial"
+          animate="animate"
+        >
           <div className="md:w-[50%] sm:w-[100%] items-start sm:mt-[16px] md:h-auto sm:h-[70%]">
             <img
               src={people}
@@ -58,8 +67,13 @@ function Company() {
               excellent service to all industry
             </p>
           </div>
-        </div>
-        <div className="md:w-[55%] flex justify-between items-center sm:pb-14 md:pb-[100px] h-auto md:flex-row sm:flex-col sm:pt-[35px]">
+        </motion.div>
+        <motion.div
+          className="md:w-[55%] flex justify-between items-center sm:pb-14 md:pb-[100px] h-auto md:flex-row sm:flex-col sm:pt-[35px]"
+          variants={fadeInDown}
+          initial="initial"
+          animate="animate"
+        >
           <div className="flex justify-center items-start flex-col h-[40%] md:w-[45%] sm:w-[100%] sm:pb-8 md:mt-10">
             <h3 className="text-[1.8rem] font-[700] text-[#333535] dark:text-[#fff]">
               Our Mission
@@ -87,7 +101,7 @@ function Company() {
               className="w-full md:h-auto sm:h-full sm:my-[-10px] md:m-0 sm:mx-auto"
             />
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );
