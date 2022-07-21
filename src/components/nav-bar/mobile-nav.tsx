@@ -151,7 +151,7 @@ function MobileNav() {
                 type="button"
                 className="dark:bg-[#fff]
               dark:text-[#000] bg-black text-white p-[13px] 
-              rounded-[10px] text-sm shadow-[0px_5px_20px_#BDDFFF] dark:hover:text-[#fff] dark:hover:bg-[#000] 
+              rounded-[10px] text-sm dark:hover:text-[#fff] dark:hover:bg-[#000] 
               hover:text-[#ff9c00]"
                 aria-label="contact-us-button"
               >

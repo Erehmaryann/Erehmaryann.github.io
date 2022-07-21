@@ -14,15 +14,15 @@ function Feature() {
       viewport={{ once: true }}
     >
       <motion.div
-        className="sm:pt-[32px] md:w-[55%] md:pt-0 pb-[35px] md:text-center flex flex-col items-center justify-center"
+        className="sm:pt-[32px] sm:w-[100%] md:w-[55%] md:pt-0 pb-[35px] md:text-center flex flex-col items-center justify-center"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
       >
-        <h3 className="font-[700] text-[#333535] dark:text-white pb-[8px] text-[1.8rem]">
+        <h3 className="font-[700] sm:text-justify w-[100%] md:text-center text-[#333535] dark:text-white pb-[8px] text-[1.8rem]">
           What We Offer
         </h3>
-        <p className="text-[rgba(0, 0, 0, 0.86)] dark:text-white pt-2 font-[400] text-[0.7rem] md:w-[400px]">
+        <p className="text-[rgba(0, 0, 0, 0.86)] dark:text-white pt-2 font-[400] text-[0.7rem] md:w-[400px] sm:text-justify w-[100%] md:text-center">
           We provide state-of-the-art IT solutions and services delivered with
           the right technological tools tailored for your business needs.
         </p>

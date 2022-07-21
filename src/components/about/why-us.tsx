@@ -32,12 +32,12 @@ function WhyUs() {
         </p>
       </motion.div>
       <motion.div
-        className="flex flex-wrap justify-between items-center md:w-[55%] md:pb-[40px]"
+        className="flex flex-wrap justify-between items-center md:w-[60%] md:pb-[130px] relative"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
       >
-        <div className="flex items-center sm:pb-3 md:pb-0">
+        <div className="flex items-center p-3 bg-white rounded-md md:w-[60%] sm:w-[100%] sm:mb-4 md:mb-0">
           <img
             src={update}
             alt="lifetime update"
@@ -48,12 +48,12 @@ function WhyUs() {
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
               Lifetime Support
             </h6>
-            <p className=" text-[#909090] text-[0.8rem] font-[400] dark:text-[#000]">
+            <p className="text-[#909090] text-[0.8rem] font-[400] dark:text-[#000]">
               We offer lifetime support for all project deployed.
             </p>
           </div>
         </div>
-        <div className="flex items-center sm:pb-3 md:pb-0">
+        <div className="flex items-center p-3 bg-white rounded-md md:w-[60%] sm:w-[100%] sm:mb-4 md:mb-0 md:absolute md:right-0 md:bottom-0">
           <img
             src={trust}
             alt="trust worthy icon"
@@ -72,12 +72,12 @@ function WhyUs() {
         </div>
       </motion.div>
       <motion.div
-        className="flex flex-wrap justify-between items-center md:w-[55%]"
+        className="flex flex-wrap justify-between items-center md:w-[60%] md:pb-[130px] relative md:mt-[30px]"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
       >
-        <div className="flex items-center sm:pb-3 md:pb-0">
+        <div className="flex items-center p-3 bg-white rounded-md md:w-[60%] sm:w-[100%] sm:mb-4 md:mb-0">
           <img
             src={award}
             alt="award winning icon"
@@ -94,7 +94,7 @@ function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="flex items-center sm:pb-3 md:pb-0">
+        <div className="flex items-center p-3 bg-white rounded-md md:w-[60%] sm:w-[100%] sm:mb-4 md:mb-0 md:absolute md:right-0 md:bottom-0">
           <img
             src={hours}
             alt="support icon"

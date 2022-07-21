@@ -23,12 +23,12 @@ function Company() {
         viewport={{ once: true }}
       >
         <motion.div
-          className="sm:pt-8 md:text-center"
+          className="sm:pt-8 md:text-center sm:w-[100%] md:w-[55%]"
           variants={fadeInDown}
           initial="initial"
           animate="animate"
         >
-          <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px]">
+          <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px] sm:text-justify w-[100%] md:text-center">
             Customer trust is our goal
           </h1>
           {/* <p className="text-[#6C6C6C] dark:text-white pt-4 text-[0.7rem] font-[500]">
