@@ -25,7 +25,7 @@ function Partners() {
       <div className="flex flex-wrap items-center justify-between pb-4">
         {partnerData.map((data) => (
           <div className="md:mx-8" key={data.id}>
-            <img src={data.src} alt="partner-logo" />
+            <img src={data.src} alt="partner-logo" className="sm:mb-4" />
           </div>
         ))}
       </div>
