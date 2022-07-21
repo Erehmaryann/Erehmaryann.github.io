@@ -28,7 +28,7 @@ function Feature() {
         </p>
       </motion.div>
       <motion.div
-        className="flex flex-col justify-between items-center md:w-[55%] sm:w-full md:pt-[40px]"
+        className="flex flex-col justify-between items-center md:w-[55%] sm:w-full xl:w-[65%] md:pt-[40px]"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
