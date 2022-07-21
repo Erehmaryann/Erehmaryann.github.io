@@ -38,34 +38,13 @@ function Feature() {
           {featureData.map((data) => (
             <div key={data.id} className="flex flex-col pb-10 md:mx-8">
               <img
-                className="dark:hidden"
+                className="mx-auto dark:hidden"
                 src={data.src2}
                 width={30}
                 alt={`${data.text}`}
               />
               <img
-                className="hidden dark:block"
-                src={data.src}
-                width={30}
-                alt={`${data.text}`}
-              />
-              <h6 className="dark:text-[#ff9c00] text-[#23232B] font-[700] text-[0.7rem] pt-2">
-                {data.text}
-              </h6>
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-wrap justify-between md:w-auto sm:w-full">
-          {featureData.map((data) => (
-            <div key={data.id} className="flex flex-col pb-10 md:mx-8">
-              <img
-                className="block dark:hidden"
-                src={data.src2}
-                width={30}
-                alt={`${data.text}`}
-              />
-              <img
-                className="hidden dark:block"
+                className="hidden mx-auto dark:block"
                 src={data.src}
                 width={30}
                 alt={`${data.text}`}
