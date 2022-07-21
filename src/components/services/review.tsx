@@ -35,20 +35,20 @@ function Review() {
       viewport={{ once: true }}
     >
       <motion.div
-        className="md:pt-0 pb-[35px] md:text-center md:w-[500px]"
+        className="py-[35px] md:text-center md:w-[500px]"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
       >
-        <h3 className="font-[700] text-[#333535] pb-[8px] text-[1.8rem] dark:text-white">
+        <h3 className="font-[700] text-[#333535] pb-[2px] text-[1.8rem] dark:text-white">
           What our customer says
         </h3>
-        <p className="text-[#6C6C6C] font-[500] text-[0.7rem] dark:text-white">
+        {/* <p className="text-[#6C6C6C] font-[500] text-[0.7rem] dark:text-white">
           The point of using Lorem Ipsum is that it has.
-        </p>
+        </p> */}
       </motion.div>
       <motion.div
-        className="flex flex-nowrap h-[300px] justify-center items-center md:w-[100%] pt-[21px]"
+        className="flex flex-nowrap h-[300px] justify-center items-center md:w-[100%] pt-[15px]"
         variants={fadeInDown}
         initial="initial"
         animate="animate"

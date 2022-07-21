@@ -31,9 +31,9 @@ function Company() {
           <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px]">
             Customer trust is our goal
           </h1>
-          <p className="text-[#6C6C6C] dark:text-white pt-4 text-[0.7rem] font-[500]">
+          {/* <p className="text-[#6C6C6C] dark:text-white pt-4 text-[0.7rem] font-[500]">
             The point of using Lorem Ipsum is that it has.
-          </p>
+          </p> */}
         </motion.div>
         <motion.div
           className="flex h-[60%] justify-between items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[10px] sm:mt-[35px]"

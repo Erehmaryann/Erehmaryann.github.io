@@ -21,10 +21,10 @@ function Partners() {
         <h3 className="font-[700] text-white py-[8px] text-[1.8rem]">
           OUR HAPPY CLIENTS
         </h3>
-        <p className="text-[#ff9c00] font-[500] text-[0.7rem]">
+        {/* <p className="text-[#ff9c00] font-[500] text-[0.7rem]">
           The point of using Lorem Ipsum is that it has a more-or-less normal
           distribution.
-        </p>
+        </p> */}
       </motion.div>
       <motion.div
         className="flex flex-wrap items-center justify-between pb-4"

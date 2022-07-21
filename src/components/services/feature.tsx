@@ -19,7 +19,7 @@ function Feature() {
         initial="initial"
         animate="animate"
       >
-        <h3 className="font-[500] text-[#000] dark:text-white pb-[8px] text-[1.8rem]">
+        <h3 className="font-[700] text-[#333535] dark:text-white pb-[8px] text-[1.8rem]">
           What We Offer
         </h3>
         <p className="text-[rgba(0, 0, 0, 0.86)] dark:text-white pt-2 font-[400] text-[0.7rem]">
@@ -36,7 +36,10 @@ function Feature() {
       >
         <div className="flex flex-wrap justify-between md:w-auto sm:w-full">
           {featureData.map((data) => (
-            <div key={data.id} className="flex flex-col pb-10 md:mx-8">
+            <div
+              key={data.id}
+              className="flex justify-between flex-col items-center pb-10 md:mx-8 sm:w-[40%] lg:w-[25%] bg-white dark:bg-[#7b7575] rounded p-6 mb-4"
+            >
               <img
                 className="mx-auto dark:hidden"
                 src={data.src2}
@@ -49,7 +52,7 @@ function Feature() {
                 width={30}
                 alt={`${data.text}`}
               />
-              <h6 className="dark:text-[#ff9c00] text-[#23232B] font-[700] text-[0.7rem] pt-2">
+              <h6 className="dark:text-[#ff9c00] text-[#23232B] font-[700] text-[0.7rem] text-center pt-2 whitespace-pre-line">
                 {data.text}
               </h6>
             </div>
