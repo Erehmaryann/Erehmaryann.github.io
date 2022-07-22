@@ -54,7 +54,7 @@ function AboutUs() {
           <div className="md:w-[45%] sm:w-[100%] items-start sm:mt-12 md:h-auto sm:h-[60%]">
             <img
               src={team}
-              alt="ladies"
+              alt="team-members"
               className="w-full md:h-auto sm:h-full sm:my-[-10px] md:m-0 sm:mx-auto"
             />
           </div>

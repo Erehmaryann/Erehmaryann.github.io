@@ -11,7 +11,7 @@ function GetTouch() {
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <div className="flex flex-wrap justify-between items-center md:w-[45%]">
+      <div className="flex flex-wrap justify-between items-center md:w-[60%]">
         <motion.h3
           className="font-[700] text-white text-[1.7rem]  md:w-[40%]"
           variants={fadeInDown}
