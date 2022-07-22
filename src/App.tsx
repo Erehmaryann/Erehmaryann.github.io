@@ -7,6 +7,7 @@ const MainNav = lazy(() => import("./components/nav-bar/main-nav"));
 const MobileNav = lazy(() => import("./components/nav-bar/mobile-nav"));
 const Team = lazy(() => import("./pages/team/team"));
 const Home = lazy(() => import("./pages/home/home"));
+const About = lazy(() => import("./pages/about-us/about-us"));
 const Footer = lazy(() => import("./components/footer/footer"));
 const ThemeContextWrapper = lazy(() => import("./context/ThemeContextWrapper"));
 
@@ -22,6 +23,7 @@ const App: FC = () => {
           <Routes location={location} key={location.key}>
             <Route path="/" element={<Home />} />
             <Route path="team" element={<Team />} />
+            <Route path="about" element={<About />} />
           </Routes>
         </AnimatePresence>
         <Footer />

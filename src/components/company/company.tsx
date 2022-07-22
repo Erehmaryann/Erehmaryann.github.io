@@ -84,7 +84,7 @@ function Company() {
               Artificial Intelligence, Networking, and Hardware Manufacturing,
               all geared towards solving socio-economic challenges globally.
             </p>
-            <a href="/">
+            <a href="/about">
               <Button
                 type="button"
                 className="bg-[#ff9c00] drop-shadow-md   

@@ -48,7 +48,7 @@ function WhyUs() {
             <h6 className="text-[#333535] font-[700] text[0.9rem]">
               Lifetime Support
             </h6>
-            <p className="text-[#909090] text-[0.8rem] font-[400] dark:text-[#000]">
+            <p className="text-[#909090] dark:text-[#000] text-[0.8rem] font-[400]">
               We offer lifetime support for all project deployed.
             </p>
           </div>
