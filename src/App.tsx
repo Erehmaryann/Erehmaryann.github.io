@@ -16,7 +16,6 @@ const App: FC = () => {
   return (
     <div>
       <ThemeContextWrapper>
-        {/* <BrowserRouter> */}
         <MainNav />
         <MobileNav />
         <AnimatePresence exitBeforeEnter>
@@ -25,7 +24,6 @@ const App: FC = () => {
             <Route path="team" element={<Team />} />
           </Routes>
         </AnimatePresence>
-        {/* </BrowserRouter> */}
         <Footer />
       </ThemeContextWrapper>
     </div>

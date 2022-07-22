@@ -3,7 +3,7 @@ import React from "react";
 const Logo = React.lazy(() => import("./logo"));
 
 function Loader() {
-  const [isVisible, setIsVisible] = React.useState(true);
+  const [isVisible, setIsVisible] = React.useState<boolean>(true);
 
   React.useEffect(() => {
     const timer = setTimeout(() => {

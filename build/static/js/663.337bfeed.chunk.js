@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjam_forte=self.webpackChunkjam_forte||[]).push([[663],{2663:function(e,t,s){s.r(t);s(2791);var i=s(184);t.default=function(){return(0,i.jsx)("div",{className:"md:hidden sm:flex  dark:bg-[#6C6C6C] bg-white justify-center items-center sticky top-0 left-0 w-full z-20",children:(0,i.jsx)("header",{id:"mobileNav",className:"flex items-center justify-between"})})}}}]);
+//# sourceMappingURL=663.337bfeed.chunk.js.map
