@@ -35,9 +35,9 @@ function Team() {
               Meet Our Team
             </h2>
             <p className="text-[#fff] md:w-[85%] pt-[21px] pb-[33px] text-[1rem] pl-1 my-3">
-              To be the company our customers want us to be, it takes an electic
-              group of passionate operators. Get to know the people leading the
-              way and the world class problem solvers at JAM-forte.
+              To be the company our customers want us to be, it takes an
+              eclectic group of passionate operators. Get to know the people
+              leading the way and the world class problem solvers at JAM-forte.
             </p>
           </div>
         </div>
