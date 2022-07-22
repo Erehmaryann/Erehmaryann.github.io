@@ -23,7 +23,7 @@ const App: FC = () => {
           <Routes location={location} key={location.key}>
             <Route path="/" element={<Home />} />
             <Route path="team" element={<Team />} />
-            <Route path="about" element={<About />} />
+            <Route path="about-us" element={<About />} />
           </Routes>
         </AnimatePresence>
         <Footer />

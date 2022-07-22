@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInDown } from "../services/variants";
-// import { containerVariants } from "./variants";
+import { useNavigate } from "react-router-dom";
 
 import people from "../../assets/svg/people.svg";
 import v from "../../assets/v.png";
@@ -10,6 +10,9 @@ import ladies from "../../assets/svg/ladies.svg";
 import Button from "../common/button/button";
 
 function Company() {
+  const [isActive, setIsActive] = React.useState<string>("");
+  let navigate = useNavigate();
+
   return (
     <section
       id="company"
@@ -84,7 +87,12 @@ function Company() {
               Artificial Intelligence, Networking, and Hardware Manufacturing,
               all geared towards solving socio-economic challenges globally.
             </p>
-            <a href="/about">
+            <p
+              onClick={() => {
+                // setIsActive("");
+                navigate(`/about-us`);
+              }}
+            >
               <Button
                 type="button"
                 className="bg-[#ff9c00] drop-shadow-md   
@@ -92,7 +100,7 @@ function Company() {
               >
                 Learn About
               </Button>
-            </a>
+            </p>
           </div>
           <div className="md:w-[50%] sm:w-[100%] items-start sm:mt-12 md:h-auto sm:h-[60%]">
             <img

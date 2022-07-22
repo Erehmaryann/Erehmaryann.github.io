@@ -15,7 +15,7 @@ function AboutUs() {
         viewport={{ once: true }}
       >
         <motion.h1
-          className="text-[#333535] text-[2rem] font-[700] leading-[26px] sm:text-justify w-[100%] md:text-center pt-[120px]"
+          className="text-[#333535] text-[2rem] font-[700] leading-[26px] sm:text-justify w-[100%] md:text-center md:pt-[120px]"
           variants={fadeInDown}
           initial="initial"
           animate="animate"
