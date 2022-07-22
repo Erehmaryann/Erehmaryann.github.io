@@ -33,8 +33,10 @@ function TeamMembers() {
             className="flex w-[96%] md:justify-around sm:justify-between
         bg-[#F8F8F8] dark:bg-[#999999] text-[#000] dark:text-white rounded-[10px] p-2"
           >
-            <h6 className="font-[700] text-[0.9em]">John Doe</h6>
-            <h6 className="font-[700] text-[0.9em]">Designer</h6>
+            <h6 className="font-[700] text-[0.9em]">MARYANN EREH</h6>
+            <h6 className="font-[700] text-[0.9em]">
+              Alpha Frontend Developer.
+            </h6>
           </div>
         </div>
         <div className="flex md:justify-around sm:justify-between flex-wrap py-7 text-[#000] dark:text-white w-full">
@@ -46,9 +48,11 @@ function TeamMembers() {
             />
           </div>
           <p className="text-[0.7rem] md:w-[40%] sm:pt-4 md:pt-0">
-            In this session, we will get our hands into the color, learn the
-            basics of user interface design with colored hands, and learn about
-            various interface design tools.
+            Maryann is a frontend developer who is very passionate about
+            bringing ideas to reality through Codes. She has a background in
+            computer science. She is a great team player. she's considered an
+            integral asset to the company. In her free time, she likes to read,
+            watch movies, take pictures, eat, and sightseeing.
           </p>
         </div>
       </motion.div>
@@ -65,8 +69,10 @@ function TeamMembers() {
             className="flex w-[96%] md:justify-around sm:justify-between
         bg-[#F8F8F8] dark:bg-[#999999] text-[#000] dark:text-white rounded-[10px] p-2"
           >
-            <h6 className="font-[700] text-[0.9em]">Maryann</h6>
-            <h6 className="font-[700] text-[0.9em]">Frontend Developer</h6>
+            <h6 className="font-[700] text-[0.9em]">EDWIN OSAYANDE</h6>
+            <h6 className="font-[700] text-[0.9em]">
+              Alpha Junior Frontend Developer.
+            </h6>
           </div>
         </div>
         <div className="flex md:justify-around sm:justify-between flex-wrap py-7 text-[#000] dark:text-white w-full">
