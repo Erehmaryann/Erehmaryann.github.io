@@ -50,9 +50,12 @@ function TeamMembers() {
           <p className="text-[0.7rem] md:w-[40%] sm:pt-4 md:pt-0">
             Maryann is a frontend developer who is very passionate about
             bringing ideas to reality through Codes. She has a background in
-            computer science. She is a great team player. she's considered an
-            integral asset to the company. In her free time, she likes to read,
-            watch movies, take pictures, eat, and sightseeing.
+            computer science. She is a great team player and is considered an
+            integral asset to the company.
+            <br />
+            <br />
+            In her free time, she likes to read, watch movies, take pictures,
+            eat, and sightseeing.
           </p>
         </div>
       </motion.div>
@@ -84,9 +87,12 @@ function TeamMembers() {
             />
           </div>
           <p className="text-[0.7rem] md:w-[40%] sm:pt-4 md:pt-0">
-            In this session, we will get our hands into the color, learn the
-            basics of user interface design with colored hands, and learn about
-            various interface design tools.
+            Edwin is passionate about web standards. He's a quick learner with
+            endless creative energy.
+            <br />
+            <br />
+            In his spare time, he enjoys music, exercising, open source
+            technology, and movies.
           </p>
         </div>
       </motion.div>
