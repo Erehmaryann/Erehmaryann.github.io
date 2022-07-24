@@ -5,7 +5,7 @@ import { svgVariants, pathOneVariants, pathTwoVariants } from "./variants";
 const Logo = () => {
   return (
     <AnimatePresence>
-      <motion.div className="bg-[rgba(255,255,255,0.1)] fixed top-0 left-0 flex items-center justify-center w-full h-full">
+      <motion.div className="fixed top-0 left-0 flex items-center justify-center w-full h-full">
         <motion.svg
           width="138"
           height="149"

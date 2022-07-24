@@ -6,7 +6,10 @@ import team from "../../assets/svg/about-us.svg";
 
 function AboutUs() {
   return (
-    <section className="w-screen h-screen flex justify-center items-center dark:bg-[#D3D3D3] bg-[#F3F3F3]">
+    <section
+      className="w-screen h-auto flex justify-center items-center dark:bg-[#D3D3D3] bg-[#F3F3F3]"
+      style={{ paddingTop: "100px" }}
+    >
       <motion.div
         className="flex flex-col items-center justify-center w-full sm:p-4"
         initial={{ opacity: 0 }}
@@ -15,7 +18,7 @@ function AboutUs() {
         viewport={{ once: true }}
       >
         <motion.h1
-          className="text-[#333535] text-[2rem] font-[700] leading-[26px] sm:text-justify w-[100%] md:text-center md:pt-[120px]"
+          className="text-[#333535] text-[2rem] font-[700] leading-[26px] sm:text-justify w-[100%] md:text-center"
           variants={fadeInDown}
           initial="initial"
           animate="animate"
@@ -29,7 +32,7 @@ function AboutUs() {
           animate="animate"
         >
           <div className="md:w-[50%] sm:w-[100%] sm:pb-8 md:mt-10">
-            <p className="text-[#6C6C6C] dark:text-[#000] font-[600] text-[0.8rem] pt-8 leading-5">
+            <p className="text-[#6C6C6C] dark:text-[#000] font-[600] text-[0.8rem] md:pt-8 leading-5">
               JAM-Forte Technologies Ltd is a topnotch IT service provider with
               head operations in Abuja, Nigeria. We specialize in software-based
               solution. Our vision is to become a major IT service provider in

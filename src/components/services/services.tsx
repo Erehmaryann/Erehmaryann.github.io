@@ -48,7 +48,7 @@ function Services() {
               we take the time to listen to your concerns and create a plan that
               meets your specific needs.
             </p>
-            <a href="/">
+            {/* <a href="/">
               <Button
                 type="button"
                 className="bg-[#ff9c00] drop-shadow-md   
@@ -56,7 +56,7 @@ function Services() {
               >
                 View more
               </Button>
-            </a>
+            </a> */}
           </motion.div>
         </motion.div>
         <Feature />
