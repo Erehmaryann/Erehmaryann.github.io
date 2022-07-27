@@ -13,7 +13,7 @@ function GetTouch() {
     >
       <div className="flex flex-wrap justify-between items-center md:w-[70%]">
         <motion.div
-          className="md:w-[15%] sm:w-[50%] py-2"
+          className="md:w-[15%] sm:w-[30%] py-2"
           variants={fadeInDown}
           initial="initial"
           animate="animate"

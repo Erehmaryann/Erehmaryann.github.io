@@ -31,11 +31,11 @@ function Team() {
           />
         </div>
         <div className="bg-[rgba(0,0,0,0.6)] w-full h-full z-10 absolute flex justify-center items-center">
-          <div className="z-10 absolute flex h-full flex-col items-center text-center justify-center md:w-[55%] sm:px-4">
-            <h2 className="text-[#fff] md:w-[45%] text-[2.6rem] font-bold leading-10 pl-1">
+          <div className="z-10 absolute flex h-full flex-col items-center lg:text-center justify-center sm:text-left md:w-[55%] sm:w-[100%] sm:px-4">
+            <h2 className="text-[#fff] lg:w-[45%] sm:w-full text-[2.6rem] font-bold leading-10">
               Meet Our Team
             </h2>
-            <p className="text-[#fff] md:w-[85%] pt-[21px] pb-[33px] text-[1rem] pl-1 my-3">
+            <p className="text-[#fff] lg:w-[85%] sm:w-full pt-[21px] pb-[33px] text-[1rem] my-3">
               To be the company our customers want us to be, it takes an
               eclectic group of passionate operators. Get to know the people
               leading the way and the world class problem solvers at JAM-forte.
