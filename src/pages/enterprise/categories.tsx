@@ -28,11 +28,11 @@ function Categories() {
           initial="initial"
           animate="animate"
         >
-          We distinguish business needs by connecting with our clients through
-          introductions, thusly, we make, assemble and have responsive sites
-          with the most recent advancements customized to surpass your
-          prerequisites and assumptions while additionally remembering SEO. We
-          work a 24 hours support group to take care of all site issues.
+          We identify business needs by engaging our clients through
+          presentations, by doing so, we create, build and host responsive
+          websites with the latest technologies tailored to exceed your
+          requirements and expectations while also keeping SEO in mind. We
+          operate a 24 hours support team to cater for all site issues.
         </motion.p>
       </div>
       {categoriesData.map((category) => (

@@ -23,7 +23,7 @@ function Benefits() {
         <div className="flex justify-between dark:text-white text-[0.9rem] md:w-[77%] items-center sm:flex-wrap py-12 sm:px-6">
           <div className="flex justify-between flex-wrap">
             <motion.div
-              className="lg:w-[40%] md:w-[45%] sm:w-[100%]"
+              className="lg:w-[40%] md:w-[45%] sm:pb-6 sm:w-[100%]"
               variants={fadeInDown}
               initial="initial"
               animate="animate"
@@ -33,24 +33,18 @@ function Benefits() {
               </p>
               <ul className="list-none style-list">
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  All round accessibility.
+                  Ease in project management.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  It is convenient, credible, and cost effective.
+                  Improves efficiency and accountability.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Cross-platform capabilities.
-                </li>
-                <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Easy Expandability.
-                </li>
-                <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved Business Reputation.
+                  Provides real time access to projects.
                 </li>
               </ul>
             </motion.div>
             <motion.div
-              className="md:pt-0 sm:pt-6 lg:w-[40%] md:w-[45%] sm:w-[100%]"
+              className="md:pt-0 lg:w-[40%] md:w-[45%] sm:w-[100%]"
               variants={fadeInDown}
               initial="initial"
               animate="animate"
@@ -58,19 +52,22 @@ function Benefits() {
               <p className="font-[600] text-[1rem] pb-4">To Our Clients</p>
               <ul className="list-none style-list">
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Strong online visibility.
+                  Customer engagement for feedback.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved communication and transparency.
+                  Improved visibility and generation of revenue.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved customer support.
+                  Memorability and better network with clients.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Fast, easy, and smart maintenance.
+                  Improves customers loyalty.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Real-Time Tracking of Businesses.
+                  High versatility that yields an upper hand.
+                </li>
+                <li className="whitespace-normal text-[0.8rem] font-[500]">
+                  Promotion of sales.
                 </li>
               </ul>
             </motion.div>

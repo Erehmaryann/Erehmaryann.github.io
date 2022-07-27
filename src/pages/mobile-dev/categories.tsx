@@ -20,7 +20,7 @@ function Categories() {
           initial="initial"
           animate="animate"
         >
-          Our Web Development Categories
+          Our Mobile Development Categories
         </motion.h2>
         <motion.p
           className="pt-[21px] text-[0.9rem] font-[300]"
@@ -28,11 +28,9 @@ function Categories() {
           initial="initial"
           animate="animate"
         >
-          We distinguish business needs by connecting with our clients through
-          introductions, thusly, we make, assemble and have responsive sites
-          with the most recent advancements customized to surpass your
-          prerequisites and assumptions while additionally remembering SEO. We
-          work a 24 hours support group to take care of all site issues.
+          Delight your users with expressive and feature-rich native iOS /
+          Android, cross-platform or Progressive Web Apps leveraging our
+          extensive experience of working with all major technologies.
         </motion.p>
       </div>
       {categoriesData.map((category) => (

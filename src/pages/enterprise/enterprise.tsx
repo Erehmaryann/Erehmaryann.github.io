@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInDown } from "../../components/services/variants";
-import webBg from "../../assets/svg/web-dev-bg.svg";
-import webBanner from "../../assets/svg/web-dev-banner.svg";
+import enterpriseBg from "../../assets/svg/enterprise-bg.svg";
+import enterpriseBanner from "../../assets/svg/enterprise-banner.svg";
 
 const Benefits = React.lazy(() => import("./benefits"));
 const Overview = React.lazy(() => import("./overview"));
 const Categories = React.lazy(() => import("./categories"));
 
-function WebDev() {
+function Enterprise() {
   return (
     <motion.div
       className="w-screen"
@@ -29,8 +29,8 @@ function WebDev() {
         >
           <img
             className="object-cover w-full h-full"
-            src={webBg}
-            alt="web bg-img"
+            src={enterpriseBg}
+            alt="enterprise bg-img"
           />
         </motion.div>
         <div className="bg-[rgba(0,0,0,0.6)] w-full h-full z-10 absolute flex md:justify-end sm:justify-center items-center md:pr-[130px]">
@@ -41,7 +41,7 @@ function WebDev() {
               initial="initial"
               animate="animate"
             >
-              Web Development
+              Enterprise System
             </motion.h2>
             <motion.p
               className="text-[#fff] pt-[21px] md:text-[1rem] sm:text-[0.9rem] md:pb-[100px] sm:pb-[0px]"
@@ -49,11 +49,12 @@ function WebDev() {
               initial="initial"
               animate="animate"
             >
-              JAM-Forte's specialists are prepared, guaranteed, and experienced
-              in the whole parts of website architecture and improvement. We
-              have a devoted group of creators, engineers, imaginative scholars
-              for site content, and information experts that cooperate to make
-              each task a triumph.
+              We give Enterprise Software arrangements, otherwise called an
+              endeavor application programming to fulfill the necessities of an
+              association as opposed to individual clients. Such associations
+              incorporate organizations, schools, interest-based client
+              gatherings, clubs, good cause, and states and non-administrative
+              parastatals.
             </motion.p>
           </div>
         </div>
@@ -63,7 +64,11 @@ function WebDev() {
           initial="initial"
           animate="animate"
         >
-          <img src={webBanner} alt="web-banner" className="w-full" />
+          <img
+            src={enterpriseBanner}
+            alt="enterprise-banner"
+            className="w-full"
+          />
         </motion.div>
       </section>
       <section className="flex flex-col items-center justify-center dark:bg-[#6C6C6C] w-full">
@@ -75,4 +80,4 @@ function WebDev() {
   );
 }
 
-export default WebDev;
+export default Enterprise;

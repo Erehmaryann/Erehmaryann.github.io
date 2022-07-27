@@ -9,6 +9,8 @@ const Team = lazy(() => import("./pages/team/team"));
 const Home = lazy(() => import("./pages/home/home"));
 const About = lazy(() => import("./pages/about-us/about-us"));
 const WebDev = lazy(() => import("./pages/web-dev/web-dev"));
+const MobileDev = lazy(() => import("./pages/mobile-dev/mobile-dev"));
+const Enterprise = lazy(() => import("./pages/enterprise/enterprise"));
 const Footer = lazy(() => import("./components/footer/footer"));
 const ThemeContextWrapper = lazy(() => import("./context/ThemeContextWrapper"));
 
@@ -26,6 +28,8 @@ const App: FC = () => {
             <Route path="team" element={<Team />} />
             <Route path="about-us" element={<About />} />
             <Route path="web-dev" element={<WebDev />} />
+            <Route path="mobile-dev" element={<MobileDev />} />
+            <Route path="enterprise" element={<Enterprise />} />
           </Routes>
         </AnimatePresence>
         <Footer />

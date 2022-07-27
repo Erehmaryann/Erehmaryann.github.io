@@ -17,7 +17,7 @@ function Overview() {
         initial="initial"
         animate="animate"
       >
-        Web Development: Overview
+        Enterprise System: Overview
       </motion.h2>
       <motion.p
         className="pt-[21px] md:text-[1rem] sm:text-[0.9rem]"
@@ -25,19 +25,19 @@ function Overview() {
         initial="initial"
         animate="animate"
       >
-        We don't disregard Browser similarity, in any event, for the sites of
-        some of the most trustworthy organizations. Disregarding Browser
-        Compatibility can cause adverse consequences to on-site ease of use.{" "}
+        Dependable Development Tools - Enterprise applications request a few
+        reconciliations, which must be done while the creating group is
+        outfitted with fundamental devices. <br />
+        Advancement-driven environment - Having the right arrangement of devices
+        becomes crucial for any advancement project so that fulfilling time
+        constraints doesn't turn into an entrusting interaction.
         <br />
-        Since Forms are a vital component on business sites and they permit
-        clients to collaborate with the site. We incorporate structures into
-        Clients' site for a business, whenever mentioned.
+        Having an environment that focuses on advancement can help engineers
+        influence different outsider mixes to move along effectiveness.
         <br />
-        We Plan your site areas and classifications cautiously and present data
-        in a manner that is simple for clients to find.
-        <br />
-        The load time of a site or Webapp matters, thusly we oversee and upgrade
-        portions of the site that would decrease its load speed.
+        For this reason, versatility becomes crucial when a venture is in a
+        developing stage so there is adequate space accessible for future
+        extension measures.
       </motion.p>
     </motion.div>
   );

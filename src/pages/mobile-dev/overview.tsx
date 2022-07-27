@@ -17,7 +17,7 @@ function Overview() {
         initial="initial"
         animate="animate"
       >
-        Web Development: Overview
+        Mobile App Development: Overview
       </motion.h2>
       <motion.p
         className="pt-[21px] md:text-[1rem] sm:text-[0.9rem]"
@@ -25,19 +25,17 @@ function Overview() {
         initial="initial"
         animate="animate"
       >
-        We don't disregard Browser similarity, in any event, for the sites of
-        some of the most trustworthy organizations. Disregarding Browser
-        Compatibility can cause adverse consequences to on-site ease of use.{" "}
+        JAM-Forte's Mobile application designers have a piece serious areas of
+        strength and experience in technologies utilized in building
+        applications. They have insight into utilizing testing, conveying, and
+        checking instruments for our applications.
         <br />
-        Since Forms are a vital component on business sites and they permit
-        clients to collaborate with the site. We incorporate structures into
-        Clients' site for a business, whenever mentioned.
+        In our application plan, we fundamentally plan each step and withdraw to
+        look at what we are working to further develop promoting techniques and
+        offer some benefit to the clients.
         <br />
-        We Plan your site areas and classifications cautiously and present data
-        in a manner that is simple for clients to find.
-        <br />
-        The load time of a site or Webapp matters, thusly we oversee and upgrade
-        portions of the site that would decrease its load speed.
+        Our applications are intended to show ideal execution and further
+        develop client fulfillment.
       </motion.p>
     </motion.div>
   );

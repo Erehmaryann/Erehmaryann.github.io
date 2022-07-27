@@ -33,19 +33,19 @@ function Benefits() {
               </p>
               <ul className="list-none style-list">
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  All round accessibility.
+                  Further developed security.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  It is convenient, credible, and cost effective.
+                  Gives admittance to data from an incorporated area.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Cross-platform capabilities.
+                  Further developed proficiency.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Easy Expandability.
+                  Expanded adaptability and versatility.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved Business Reputation.
+                  Offers the upper hand.
                 </li>
               </ul>
             </motion.div>
@@ -58,19 +58,19 @@ function Benefits() {
               <p className="font-[600] text-[1rem] pb-4">To Our Clients</p>
               <ul className="list-none style-list">
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Strong online visibility.
+                  Higher labor force productivity.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved communication and transparency.
+                  Further developed cooperation and work process.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved customer support.
+                  Start to finish quality and conveyance possession.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Fast, easy, and smart maintenance.
+                  Support for administration system — criticism and survey.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Real-Time Tracking of Businesses.
+                  Generally speaking item guide, needs and system, SDLC.
                 </li>
               </ul>
             </motion.div>
