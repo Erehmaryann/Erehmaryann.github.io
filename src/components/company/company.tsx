@@ -10,13 +10,12 @@ import ladies from "../../assets/svg/ladies.svg";
 import Button from "../common/button/button";
 
 function Company() {
-  const [isActive, setIsActive] = React.useState<string>("");
   let navigate = useNavigate();
 
   return (
     <section
       id="company"
-      className="w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px]"
+      className="w-screen flex justify-center items-center dark:bg-[#6C6C6C] bg-[#FBFBFA] md:py-[100px] sm:pt-14"
     >
       <motion.div
         className="flex flex-col items-center justify-center w-full h-full sm:p-4 md:px-0 md:pb-0"
@@ -34,9 +33,6 @@ function Company() {
           <h1 className="text-[#333535] dark:text-white text-[1.8rem] font-[700] leading-[26px] sm:text-justify w-[100%] md:text-center">
             Customer trust is our goal
           </h1>
-          {/* <p className="text-[#6C6C6C] dark:text-white pt-4 text-[0.7rem] font-[500]">
-            The point of using Lorem Ipsum is that it has.
-          </p> */}
         </motion.div>
         <motion.div
           className="flex h-[60%] justify-between items-center sm:flex-col-reverse md:flex-row md:w-[55%] md:mt-[10px] sm:mt-[35px]"
@@ -89,7 +85,6 @@ function Company() {
             </p>
             <p
               onClick={() => {
-                // setIsActive("");
                 navigate(`/about-us`);
               }}
             >

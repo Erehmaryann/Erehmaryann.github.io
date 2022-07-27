@@ -13,7 +13,7 @@ const ThemeSwitch = React.lazy(() => import("../theme-switch/ThemeSwitch"));
 function MobileNav() {
   const [showNav, setShowNav] = React.useState<boolean>(false);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isActive, setIsActive] = React.useState<string>("");
+  const [isActive, setIsActive] = React.useState<string>("company");
   const history = useLocation();
   let navigate = useNavigate();
 
@@ -22,20 +22,20 @@ function MobileNav() {
   };
 
   return (
-    <div className="md:hidden sm:flex dark:bg-[#6C6C6C] bg-white justify-center items-center fixed top-0 left-0 right-0 w-full z-20">
+    <div className="md:hidden sm:flex dark:bg-[#6C6C6C] bg-white justify-center items-center fixed top-0 left-0 right-0 w-full z-20 h-[13vh]">
       <header className="relative flex items-center justify-between w-full">
-        <div className="w-[120px]">
+        <div className="w-[120px] pl-4">
           <a href="/">
             <img
               className="hidden dark:block w-full mr-[70px]"
-              src="/logo-dark.png"
+              src="/logo-dark.svg"
               alt="Jam-forte Home"
             />
           </a>
           <a href="/">
             <img
               className="block dark:hidden w-full mr-[70px]"
-              src="/logo-light.png"
+              src="/logo-light.svg"
               alt="Jam-forte Home"
             />
           </a>
@@ -65,7 +65,7 @@ function MobileNav() {
           <motion.nav
             animate={showNav ? "open" : "closed"}
             variants={variants}
-            className="justify-center p-8 top-[90px] right-[10px] bg-white absolute flex-col items-center border h-[277px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]"
+            className="justify-center p-8 top-[120px] right-[10px] bg-white absolute flex-col items-center border h-[277px] w-[70%] dark:bg-[#6C6C6C] rounded-[10px]"
           >
             <motion.div
               className="relative pb-4"

@@ -8,7 +8,7 @@ function AboutUs() {
   return (
     <section
       className="w-screen h-auto flex justify-center items-center dark:bg-[#D3D3D3] bg-[#F3F3F3]"
-      style={{ paddingTop: "100px" }}
+      style={{ paddingTop: "150px" }}
     >
       <motion.div
         className="flex flex-col items-center justify-center w-full sm:p-4"
@@ -26,7 +26,7 @@ function AboutUs() {
           About Us
         </motion.h1>
         <motion.div
-          className="md:w-[75%] flex justify-between items-center sm:pb-14 md:pb-[100px] h-auto md:flex-row sm:flex-col sm:pt-[35px]"
+          className="md:w-[75%] flex justify-between items-center sm:pb-14 md:pb-[80px] md:pt-0 h-auto md:flex-row sm:flex-col sm:pt-[35px]"
           variants={fadeInDown}
           initial="initial"
           animate="animate"

@@ -11,9 +11,19 @@ function GetTouch() {
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <div className="flex flex-wrap justify-between items-center md:w-[60%]">
+      <div className="flex flex-wrap justify-between items-center md:w-[70%]">
+        <motion.div
+          className="md:w-[15%] sm:w-[50%] py-2"
+          variants={fadeInDown}
+          initial="initial"
+          animate="animate"
+        >
+          <a href="/">
+            <img className="w-full" src="/logo-dark.svg" alt="Jam-forte Home" />
+          </a>
+        </motion.div>
         <motion.h3
-          className="font-[700] text-white text-[1.7rem]  md:w-[40%]"
+          className="font-[700] text-white text-[1.7rem]  md:w-[35%]"
           variants={fadeInDown}
           initial="initial"
           animate="animate"
@@ -22,7 +32,7 @@ function GetTouch() {
         </motion.h3>
 
         <motion.p
-          className="md:w-[40%] text-[0.7rem] font-[500] py-2"
+          className="md:w-[35%] text-[0.7rem] font-[500] text-white py-2"
           variants={fadeInDown}
           initial="initial"
           animate="animate"

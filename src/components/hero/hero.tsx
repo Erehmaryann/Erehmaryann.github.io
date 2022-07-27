@@ -27,7 +27,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-[100vh] w-screen flex justify-center"
+      className="relative h-[100vh] w-screen flex justify-center pt-14"
     >
       <div className="absolute left-0 right-0 w-full h-full">
         <img

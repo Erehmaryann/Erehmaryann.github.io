@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeInDown } from "./variants";
 
 import { featureData } from "./feature-data";
 
 function Feature() {
+  let navigate = useNavigate();
+
   return (
     <motion.section
       className="flex flex-col items-center w-full md:py-[100px]"
@@ -37,7 +40,10 @@ function Feature() {
           {featureData.map((data) => (
             <div
               key={data.id}
-              className="flex justify-between flex-col items-center md:mx-8 sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[25%] bg-[#ffffff] rounded py-4 px-8 mb-6"
+              onClick={() => {
+                navigate(`${data.link}`);
+              }}
+              className="flex justify-between flex-col items-center cursor-pointer md:mx-8 sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[25%] bg-[#ffffff] rounded py-4 px-8 mb-6 hover:shadow-lg"
             >
               <img
                 className="mx-auto"

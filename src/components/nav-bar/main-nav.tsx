@@ -12,27 +12,25 @@ const Span = () => (
 
 function MainNav() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isActive, setIsActive] = React.useState("");
+  const [isActive, setIsActive] = React.useState("company");
   const history = useLocation();
   let navigate = useNavigate();
 
   return (
-    <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center fixed top-0 left-0 right-0 w-full z-20">
+    <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center fixed top-0 left-0 right-0 w-full z-20 h-[13vh]">
       <header className="flex justify-between items-center my-[-20px]">
-        <div className="">
+        <div className="w-[120px] mr-[100px]">
           <a href="/">
             <img
-              className="hidden dark:block mr-[70px]"
-              src="/logo-dark.png"
-              width={200}
+              className="hidden dark:block w-full"
+              src="/logo-dark.svg"
               alt="Jam-forte Home"
             />
           </a>
           <a href="/">
             <img
-              className="block dark:hidden mr-[70px]"
-              src="/logo-light.png"
-              width={200}
+              className="block dark:hidden w-full"
+              src="/logo-light.svg"
               alt="Jam-forte Home"
             />
           </a>
