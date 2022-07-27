@@ -20,7 +20,7 @@ function Categories() {
           initial="initial"
           animate="animate"
         >
-          Our Web Development Categories
+          Our Enterprise System Categories
         </motion.h2>
         <motion.p
           className="pt-[21px] text-[0.9rem] font-[300]"
