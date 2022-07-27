@@ -20,7 +20,7 @@ function Benefits() {
         >
           Benefits when you hire us for this service
         </motion.h2>
-        <div className="flex justify-between dark:text-white text-[0.9rem] md:w-[77%] items-center sm:flex-wrap py-12 sm:px-6">
+        <div className="flex justify-center dark:text-white text-[0.9rem] md:w-[77%] items-center sm:flex-wrap py-12 sm:px-6">
           <div className="flex justify-between flex-wrap">
             <motion.div
               className="lg:w-[40%] md:w-[45%] sm:w-[100%]"

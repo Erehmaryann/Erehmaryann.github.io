@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { fadeInDown } from "../../components/services/variants";
-import teamBg from "../../assets/bg-4.png";
+import teamBg from "../../assets/team.jpg";
 
 const Executive = React.lazy(() => import("./executive"));
 const TeamMembers = React.lazy(() => import("./team-members"));
@@ -18,7 +18,7 @@ function Team() {
     >
       <motion.section
         id="hero"
-        className="relative h-[70vh] w-full flex justify-center items-center"
+        className="relative h-[80vh] w-full flex justify-center items-center"
         variants={fadeInDown}
         initial="initial"
         animate="animate"
@@ -30,7 +30,7 @@ function Team() {
             alt="hero bg-img"
           />
         </div>
-        <div className="bg-[rgba(0,0,0,0.6)] w-full h-full z-10 absolute flex justify-center items-center">
+        <div className="bg-[rgba(0,0,0,0.5)] w-full h-full z-10 absolute flex justify-center items-center">
           <div className="z-10 absolute flex h-full flex-col items-center lg:text-center justify-center sm:text-left md:w-[55%] sm:w-[100%] sm:px-4">
             <h2 className="text-[#fff] lg:w-[45%] sm:w-full text-[2.6rem] font-bold leading-10">
               Meet Our Team

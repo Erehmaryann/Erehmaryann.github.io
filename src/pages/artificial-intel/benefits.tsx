@@ -33,19 +33,13 @@ function Benefits() {
               </p>
               <ul className="list-none style-list">
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  All round accessibility.
+                  Further developed security.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  It is convenient, credible, and cost effective.
+                  Offers the upper hand.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Cross-platform capabilities.
-                </li>
-                <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Easy Expandability.
-                </li>
-                <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved Business Reputation.
+                  Offers the upper hand.
                 </li>
               </ul>
             </motion.div>
@@ -58,19 +52,16 @@ function Benefits() {
               <p className="font-[600] text-[1rem] pb-4">To Our Clients</p>
               <ul className="list-none style-list">
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Strong online visibility.
+                  Sales growth.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved communication and transparency.
+                  Save cost.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Improved customer support.
+                  Increases the labor efficiency.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Fast, easy, and smart maintenance.
-                </li>
-                <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Real-Time Tracking of Businesses.
+                  Increased satisfaction.
                 </li>
               </ul>
             </motion.div>
