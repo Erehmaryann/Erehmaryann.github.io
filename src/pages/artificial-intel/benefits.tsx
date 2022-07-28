@@ -39,7 +39,7 @@ function Benefits() {
                   Offers the upper hand.
                 </li>
                 <li className="whitespace-normal text-[0.8rem] font-[500]">
-                  Offers the upper hand.
+                  Offers restrictive answers for business processes.
                 </li>
               </ul>
             </motion.div>
