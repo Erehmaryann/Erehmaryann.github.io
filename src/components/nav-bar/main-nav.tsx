@@ -17,7 +17,7 @@ function MainNav() {
   let navigate = useNavigate();
 
   return (
-    <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center fixed top-0 left-0 right-0 w-full z-20 h-[13vh]">
+    <div className="hidden md:flex dark:bg-[#6C6C6C] bg-white justify-center items-center fixed top-0 left-0 right-0 w-full z-20 h-[10vh]">
       <header className="flex justify-between items-center my-[-20px]">
         <div className="w-[120px] mr-[100px]">
           <a href="/">

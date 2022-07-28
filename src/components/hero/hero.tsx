@@ -27,7 +27,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-[100vh] w-screen flex justify-center pt-14"
+      className="relative h-[100vh] w-screen flex justify-center md:pt-14"
     >
       <div className="absolute left-0 right-0 w-full h-full">
         <img
@@ -38,10 +38,10 @@ function Hero() {
       </div>
       <div className="bg-[rgba(0,0,0,0.5)] w-full h-full z-10 absolute flex justify-center items-center">
         <div className="flex h-full justify-end flex-col pb-[35px] items-start md:w-[55%] sm:p-4 md:p-0">
-          <h1 className="text-[#fff] md:w-[55%] text-[2.6rem] font-bold leading-11 pl-1">
+          <h1 className="text-[#fff] md:w-[55%] md:text-[2.6rem] sm:text-[1.2rem] font-bold md:leading-11">
             {sliderData[slide].leadText}
           </h1>
-          <p className="text-[#ff9c00] md:w-[90%] py-[21px] text-[1rem] my-3">
+          <p className="text-[#ff9c00] md:w-[90%] py-[21px] md:text-[1rem] sm:text-[0.8rem] my-3">
             {sliderData[slide].paragraph}
           </p>
           <p className="border-b-[3px] border-[#fff] w-[15%]"></p>
