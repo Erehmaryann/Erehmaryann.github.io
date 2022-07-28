@@ -1,0 +1,38 @@
+export const categoriesData = [
+  {
+    id: 1,
+    title: "Frontend Development",
+    body: "Front-end development oversees all that clients outwardly see first in their program or application. Our front-end engineers participate in examining code, planning, and troubleshooting applications alongside guaranteeing a consistent client experience.",
+    listItem1: "JavaScript Frameworks",
+    listItem2: "CSS Preprocessors",
+    listItem3: "RESTful Services and APIs",
+    listItem4: "",
+  },
+  {
+    id: 2,
+    title: "Backend Development",
+    body: "Back-end Development alludes to the server side of development where you are principally centered around how the site functions. This sort of web improvement ordinarily comprises three sections: a server, an application, and a data set. Code composed by back-end designers conveys the data set data to the program.",
+    listItem1: "Business Logic Development",
+    listItem2: "Secure Data Storage",
+    listItem3: "Payment Process Configuration",
+    listItem4: "System Architecture Building",
+  },
+  {
+    id: 3,
+    title: "Mobile App Development",
+    body: "Develop native or hybrid (cross-platform) mobile apps with great usability and custom features.",
+    listItem1: "Hybrid Mobile App Development",
+    listItem2: "Hybrid Tablet App Development",
+    listItem3: "Hybrid TV App Development",
+    listItem4: "",
+  },
+  {
+    id: 4,
+    title: "Machine Learning Implementation",
+    body: "Do straightforward and complex undertakings in a basic, quicker, and proficient way with the utilization of AI and Machine Learning Tools.",
+    listItem1: "Facial Recognition and Chatbots.",
+    listItem2: "Emulates human cognizance.",
+    listItem3: "Information ingestion.",
+    listItem4: "",
+  },
+];
