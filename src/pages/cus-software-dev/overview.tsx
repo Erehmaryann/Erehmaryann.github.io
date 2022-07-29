@@ -26,7 +26,7 @@ function Overview() {
         animate="animate"
       >
         Zeroing in on the business side and the prerequisites, we assist you
-        with building the full item beginning to end. We characterize the
+        with building the full product beginning to end. We characterize the
         venture extension, prerequisites and conveyance timetables toward the
         beginning and our project managers and product owners assume control
         over the wheel.
