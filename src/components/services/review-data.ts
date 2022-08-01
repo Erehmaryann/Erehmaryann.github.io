@@ -1,4 +1,4 @@
-import customer from "../../assets/customer.png";
+import customer from "../../assets/customer.webp";
 
 export const reviewData = [
   {
@@ -14,7 +14,7 @@ export const reviewData = [
     id: "2",
     customerImg: customer,
     customerName: "Chibuzor Okafor",
-    jobTitle: "Full-stack Engineer",
+    jobTitle: "Manager of Human Resources",
     count: 5,
     reviewText:
       "Jam Forte Technologies has been an essential part of our business. They have helped us to grow and expand, and I'm confident that they will be able to do the same for anyone else who chooses to work with them.",
@@ -22,8 +22,8 @@ export const reviewData = [
   {
     id: "3",
     customerImg: customer,
-    customerName: "Maryann Ereh",
-    jobTitle: "Frontend Developer",
+    customerName: "Adam Smith",
+    jobTitle: "CEO & Co-Founder of Irish Tech",
     count: 5,
     reviewText:
       "I would like to commend Jam Forte for their work in development. They have really shown that they are willing to go the extra mile and have never failed to execute on deadlines no matter how difficult the task may be.",

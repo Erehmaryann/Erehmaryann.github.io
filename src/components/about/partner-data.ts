@@ -1,14 +1,14 @@
-import bila from "../../assets/bila.png";
-import brainiacRealty from "../../assets/brainiac-realty.png";
-import financeOak from "../../assets/finance-oak.png";
-import gma from "../../assets/global-maritime-academy.png";
-import hmg from "../../assets/hallow-media-group.png";
-import jfa from "../../assets/jam-forte-agro.png";
-import jasbazaar from "../../assets/jasbazaar.png";
-import paysequrity from "../../assets/paysequr.png";
-import SMA from "../../assets/southern-maritime-academy.png";
-import yif from "../../assets/young-intellects-foundation.png";
-import la from "../../assets/l-a.png";
+import bila from "../../assets/bila.webp";
+import brainiacRealty from "../../assets/brainiac-realty.webp";
+import financeOak from "../../assets/finance-oak.webp";
+import gma from "../../assets/global-maritime-academy.webp";
+import hmg from "../../assets/hallow-media-group.webp";
+import jfa from "../../assets/jam-forte-agro.webp";
+import jasbazaar from "../../assets/jasbazaar.webp";
+import paysequrity from "../../assets/paysequr.webp";
+import SMA from "../../assets/southern-maritime-academy.webp";
+import yif from "../../assets/young-intellects-foundation.webp";
+import la from "../../assets/l-a.webp";
 
 export const partnerData = [
   { src: financeOak, id: 1 },

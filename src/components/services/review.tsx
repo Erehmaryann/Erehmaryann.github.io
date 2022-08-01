@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeInDown } from "./variants";
 import { LeftArrow, LeftArrowActive, RightArrow } from "./icons";
-import reviewDarkBg from "../../assets/review-dark-bg.png";
-import reviewLightBg from "../../assets/review-light-bg.png";
+import reviewDarkBg from "../../assets/review-dark-bg.webp";
+import reviewLightBg from "../../assets/review-light-bg.webp";
 import { reviewData } from "./review-data";
 import { RatingStar } from "rating-star";
 

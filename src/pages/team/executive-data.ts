@@ -1,4 +1,4 @@
-import executiveMember from "../../assets/executive.png";
+import executiveMember from "../../assets/executive.webp";
 
 export const executiveData1 = [
   {

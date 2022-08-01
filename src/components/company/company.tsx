@@ -4,8 +4,8 @@ import { fadeInDown } from "../services/variants";
 import { useNavigate } from "react-router-dom";
 
 import people from "../../assets/svg/people.svg";
-import v from "../../assets/v.png";
-import lightV from "../../assets/light-v.png";
+import v from "../../assets/v.webp";
+import lightV from "../../assets/light-v.webp";
 import ladies from "../../assets/svg/ladies.svg";
 import Button from "../common/button/button";
 
