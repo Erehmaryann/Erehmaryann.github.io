@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInDown } from "../../components/services/variants";
-import executiveMember from "../../assets/executive.png";
+import executiveMember from "../../assets/executive.webp";
 
 function TeamMembers() {
   return (
