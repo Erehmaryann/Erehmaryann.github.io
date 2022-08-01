@@ -1,7 +1,7 @@
-import bg1 from "../../assets/bg-1.png";
-import bg2 from "../../assets/bg-2.png";
-import bg3 from "../../assets/bg-3.png";
-import bg4 from "../../assets/bg-4.png";
+import bg1 from "../../assets/bg-1.webp";
+import bg2 from "../../assets/bg-2.webp";
+import bg3 from "../../assets/bg-3.webp";
+import bg4 from "../../assets/bg-4.webp";
 
 export const sliderData = [
   {

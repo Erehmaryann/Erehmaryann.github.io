@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeInDown } from "../../components/services/variants";
 
 import team from "../../assets/svg/about-us.svg";
-import aboutBg from "../../assets/about-bg.jpg";
+import aboutBg from "../../assets/about-bg.webp";
 
 function AboutUs() {
   return (

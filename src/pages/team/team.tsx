@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { fadeInDown } from "../../components/services/variants";
-import teamBg from "../../assets/team.jpg";
+import teamBg from "../../assets/team.webp";
 
 const Executive = React.lazy(() => import("./executive"));
 const TeamMembers = React.lazy(() => import("./team-members"));

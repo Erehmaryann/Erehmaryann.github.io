@@ -13,12 +13,12 @@ const ThemeSwitch: FC = () => {
       }
     >
       <img
-        src="/light-switch.png"
+        src="/light-switch.webp"
         className="block dark:hidden w-[30px]"
         alt="App Light Switch"
       />
       <img
-        src="/dark-switch.png"
+        src="/dark-switch.webp"
         className="hidden dark:block w-[30px]"
         alt="App Dark Switch"
       />
